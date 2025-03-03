@@ -1,0 +1,18 @@
+{% load static %}
+
+<header class="header header--loggedIn">
+    <div class="container">
+        <a href="{% url 'home' %}" class="header__logo">
+            <img src="{% static 'images/favicon.ico' %}" />
+            <h1>Footy Ref</h1>
+        </a>
+        <form class="header__search" method="GET" action="{% url 'players_all' %}">
+            <label>
+                <title>search</title>
+                <input name="q" placeholder="Search for posts" />
+            </label>
+        </form>
+        <nav class="header__menu">
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,10 @@
+pyproject.toml
+src/footy/__init__.py
+src/footy/gui_app.py
+src/footy/main.py
+src/footy.egg-info/PKG-INFO
+src/footy.egg-info/SOURCES.txt
+src/footy.egg-info/dependency_links.txt
+src/footy.egg-info/entry_points.txt
+src/footy.egg-info/requires.txt
+src/footy.egg-info/top_level.txt

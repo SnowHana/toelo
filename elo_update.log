@@ -1,0 +1,428 @@
+2024-12-31 18:56:53,387 - INFO - Remaining games to analyse: 63246
+2024-12-31 18:56:53,422 - INFO - Starting ELO update for 10 games.
+2024-12-31 18:56:53,422 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2234404, datetime.date(2012, 7, 9))
+2024-12-31 18:56:53,422 - INFO - ELO Updater start: (2231978, datetime.date(2012, 7, 3)) games waiting for an analyse
+2024-12-31 18:56:56,642 - INFO - Batch completed. Processed 10 games.
+2024-12-31 18:56:56,643 - INFO - Flushing 105 player ELO updates to the database.
+2024-12-31 18:58:23,370 - INFO - Remaining games to analyse: 63236
+2024-12-31 18:58:23,391 - INFO - Starting ELO update for 10 games.
+2024-12-31 18:58:23,392 - INFO - START: (2231980, datetime.date(2012, 7, 10)) - END: (2235799, datetime.date(2012, 7, 12))
+2024-12-31 18:58:23,392 - INFO - ELO Updater start: (2231980, datetime.date(2012, 7, 10)) games waiting for an analyse
+2024-12-31 18:58:26,982 - INFO - Batch completed. Processed 10 games.
+2024-12-31 18:58:26,982 - INFO - Flushing 82 player ELO updates to the database.
+2024-12-31 18:58:29,712 - INFO - Remaining games to analyse: 63226
+2024-12-31 18:58:29,732 - INFO - Starting ELO update for 10 games.
+2024-12-31 18:58:29,732 - INFO - START: (2236654, datetime.date(2012, 7, 12)) - END: (2222957, datetime.date(2012, 7, 15))
+2024-12-31 18:58:29,733 - INFO - ELO Updater start: (2236654, datetime.date(2012, 7, 12)) games waiting for an analyse
+2024-12-31 18:58:32,693 - INFO - Batch completed. Processed 10 games.
+2024-12-31 18:58:32,694 - INFO - Flushing 307 player ELO updates to the database.
+2025-01-27 10:50:54,641 - INFO - Remaining games to analyse: 63206
+2025-01-27 10:50:54,713 - INFO - Starting ELO update for 100 games.
+2025-01-27 10:50:54,713 - INFO - START: (2231993, datetime.date(2012, 7, 17)) - END: (2224572, datetime.date(2012, 7, 28))
+2025-01-27 10:50:54,713 - INFO - ELO Updater start: (2231993, datetime.date(2012, 7, 17)) games waiting for an analyse
+2025-01-27 10:51:21,830 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 10:51:22,022 - INFO - Batch completed. Processed 100 games.
+2025-01-27 10:51:22,022 - INFO - Flushing 855 player ELO updates to the database.
+2025-01-27 11:00:02,197 - INFO - Remaining games to analyse: 63106
+2025-01-27 11:00:02,314 - INFO - Starting ELO update for 10000 games.
+2025-01-27 11:00:02,314 - INFO - START: (2229914, datetime.date(2012, 7, 28)) - END: (2335225, datetime.date(2014, 4, 20))
+2025-01-27 11:00:26,004 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:00:26,153 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:00:26,236 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:00:52,857 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:00:52,984 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:00:53,109 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:01:15,301 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:01:15,460 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:01:15,553 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:01:15,647 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:01:36,567 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:01:36,678 - INFO - Flushing 1006 player ELO updates to the database.
+2025-01-27 11:01:36,785 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:01:36,865 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:02:00,326 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:02:00,423 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:02:00,515 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:02:00,597 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:02:22,241 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:02:22,343 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:02:22,441 - INFO - Flushing 1021 player ELO updates to the database.
+2025-01-27 11:02:22,523 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:02:47,119 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:02:47,218 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:02:47,321 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:02:47,400 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:03:10,834 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:03:10,930 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:03:11,022 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:03:11,109 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:03:36,572 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:03:36,671 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:03:36,775 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:03:36,861 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:03:57,801 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:03:57,900 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:03:57,998 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:03:58,078 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:04:20,835 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:04:20,934 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:04:21,029 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:04:42,698 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:04:42,819 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:04:42,911 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:04:43,004 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:05:06,987 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:05:07,103 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:05:07,201 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:05:07,299 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:05:07,381 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:05:31,903 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:05:32,004 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:05:32,099 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:05:32,186 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:05:55,220 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:05:55,326 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:05:55,433 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:06:19,967 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:06:20,065 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:06:20,158 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:06:20,249 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:06:20,334 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:06:42,431 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:06:42,538 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:06:42,630 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:07:04,877 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:07:04,979 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:07:05,094 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:07:05,184 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:07:28,077 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:07:28,175 - INFO - Flushing 1006 player ELO updates to the database.
+2025-01-27 11:07:28,272 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:07:28,363 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:07:55,633 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:07:55,755 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:07:55,867 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:07:55,972 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:08:28,798 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:08:29,910 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:08:30,053 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:08:30,306 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:09:03,020 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:09:03,138 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:09:03,237 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:09:03,331 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:09:25,475 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:09:25,581 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:09:25,679 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:09:25,780 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:09:52,279 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:09:52,408 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:09:52,513 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:09:52,612 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:10:15,614 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:10:15,734 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:10:15,891 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:10:15,999 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:10:42,031 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:10:42,186 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:10:42,336 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:10:42,479 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:11:09,712 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:11:09,828 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:11:09,931 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:11:10,058 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:11:36,330 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:11:36,443 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:11:36,568 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:11:36,677 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:12:03,758 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:12:03,870 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:12:03,973 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:12:04,079 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:12:30,251 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:12:30,380 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:12:30,495 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:12:30,597 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:12:56,773 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:12:56,887 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:12:57,014 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:12:57,112 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:13:23,892 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:13:24,004 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:13:24,120 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:13:24,229 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:13:51,268 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:13:51,382 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:13:51,495 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:13:51,615 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:14:18,302 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:14:18,413 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:14:18,577 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:14:18,685 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:14:49,191 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:14:49,311 - INFO - Flushing 1021 player ELO updates to the database.
+2025-01-27 11:14:49,420 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:14:49,533 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:14:49,626 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:15:16,396 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:15:16,512 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:15:16,622 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:15:16,712 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:15:44,039 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:15:44,167 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:15:44,274 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:15:44,370 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:16:11,779 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:16:11,895 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:16:12,010 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:16:12,112 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:16:40,945 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:16:41,070 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:16:41,184 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:16:41,312 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:17:09,281 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:17:09,398 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:17:09,513 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:17:09,618 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:17:36,920 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:17:37,158 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:17:37,299 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:17:37,421 - INFO - Flushing 1021 player ELO updates to the database.
+2025-01-27 11:17:37,520 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:18:05,731 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:18:05,855 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:18:05,961 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:18:06,057 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:18:34,163 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:18:34,281 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:18:34,393 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:18:34,497 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:19:03,190 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:19:03,326 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:19:03,430 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:19:03,563 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:19:31,292 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:19:31,414 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:19:31,526 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:19:31,632 - INFO - Flushing 1006 player ELO updates to the database.
+2025-01-27 11:19:31,718 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:19:59,503 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:19:59,625 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:19:59,742 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:19:59,836 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:20:31,014 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:20:31,121 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:20:31,221 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:20:31,310 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:21:00,751 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:21:00,859 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:21:00,967 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:21:01,078 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:21:29,275 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:21:29,382 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:21:29,491 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:21:29,596 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:21:29,686 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:21:58,114 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:21:58,219 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:21:58,326 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:21:58,422 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:22:26,490 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:22:26,604 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:22:26,708 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:22:26,812 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:22:55,459 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:22:55,588 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:22:55,683 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:23:23,939 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:23:24,056 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:23:24,151 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:23:53,193 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:23:53,308 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:23:53,401 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:24:21,499 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:24:21,617 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:24:21,712 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:24:50,650 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:24:50,767 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:24:50,874 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:24:51,003 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:25:19,667 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:25:19,774 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:25:19,882 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:25:19,969 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:25:50,752 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:25:50,862 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:25:50,971 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:25:51,061 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:26:20,683 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:26:20,807 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:26:20,902 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:26:49,591 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:26:49,691 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:26:49,790 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:26:49,890 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:27:18,075 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:27:18,187 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:27:18,300 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:27:18,405 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:27:46,689 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:27:46,812 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:27:46,924 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:27:47,023 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:28:15,516 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:28:15,619 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:28:15,721 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:28:15,821 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:28:45,379 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:28:45,487 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:28:45,584 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:28:45,673 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:29:16,067 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:29:16,198 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:29:16,332 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:29:16,433 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:29:45,996 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:29:46,094 - INFO - Flushing 1005 player ELO updates to the database.
+2025-01-27 11:29:46,193 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:29:46,338 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:30:14,749 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:30:14,846 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:30:14,942 - INFO - Flushing 1021 player ELO updates to the database.
+2025-01-27 11:30:15,031 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:30:42,896 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:30:42,997 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:30:43,094 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:30:43,195 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:31:11,558 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:31:11,656 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:31:11,764 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:31:11,852 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:31:40,203 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:31:40,301 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:31:40,395 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:31:40,487 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:32:09,259 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:32:09,375 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:32:09,493 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:32:09,591 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:32:37,617 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:32:37,730 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:32:37,828 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:32:37,929 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:33:06,350 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:33:06,462 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:33:06,581 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:33:06,668 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:33:35,325 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:33:35,423 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:33:35,532 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:33:35,615 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:34:03,909 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:34:04,007 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:34:04,101 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:34:04,186 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:34:32,205 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:34:32,304 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:34:32,402 - INFO - Flushing 1032 player ELO updates to the database.
+2025-01-27 11:34:32,499 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:35:04,229 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:35:04,329 - INFO - Flushing 1031 player ELO updates to the database.
+2025-01-27 11:35:04,432 - INFO - Flushing 1006 player ELO updates to the database.
+2025-01-27 11:35:04,518 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:35:32,749 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:35:32,842 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:35:32,943 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:35:33,029 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:36:01,493 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:36:01,592 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:36:01,690 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:36:01,771 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:36:29,952 - INFO - Flushing 1021 player ELO updates to the database.
+2025-01-27 11:36:30,043 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:36:30,142 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:36:30,219 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:37:05,357 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:37:05,458 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:37:05,554 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:37:05,649 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:37:41,460 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:37:41,634 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:37:42,017 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:37:42,209 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:38:15,027 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:38:15,141 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:38:15,235 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:38:15,328 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:38:46,431 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:38:46,553 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:38:46,655 - INFO - Flushing 1012 player ELO updates to the database.
+2025-01-27 11:38:46,744 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:39:18,588 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:39:18,708 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:39:18,813 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:39:18,902 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:39:53,999 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:39:54,152 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:39:54,311 - INFO - Flushing 1028 player ELO updates to the database.
+2025-01-27 11:39:54,414 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:40:27,863 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:40:27,991 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:40:28,107 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:40:28,201 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:40:28,277 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:40:59,783 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:40:59,897 - INFO - Flushing 1026 player ELO updates to the database.
+2025-01-27 11:41:00,000 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:41:00,079 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:41:32,181 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:41:32,295 - INFO - Flushing 1023 player ELO updates to the database.
+2025-01-27 11:41:32,429 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:41:32,542 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:42:04,240 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:42:04,355 - INFO - Flushing 1019 player ELO updates to the database.
+2025-01-27 11:42:04,454 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:42:04,548 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:42:35,376 - INFO - Flushing 1027 player ELO updates to the database.
+2025-01-27 11:42:35,487 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:42:35,586 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:42:35,675 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:43:06,638 - INFO - Flushing 1014 player ELO updates to the database.
+2025-01-27 11:43:06,749 - INFO - Flushing 1013 player ELO updates to the database.
+2025-01-27 11:43:06,847 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:43:06,941 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:43:37,759 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:43:37,876 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:43:37,976 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:43:38,084 - INFO - Flushing 1016 player ELO updates to the database.
+2025-01-27 11:43:38,168 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:44:09,290 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:44:09,398 - INFO - Flushing 1020 player ELO updates to the database.
+2025-01-27 11:44:09,633 - INFO - Flushing 1003 player ELO updates to the database.
+2025-01-27 11:44:09,712 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:44:41,076 - INFO - Flushing 1033 player ELO updates to the database.
+2025-01-27 11:44:41,187 - INFO - Flushing 1002 player ELO updates to the database.
+2025-01-27 11:44:41,285 - INFO - Flushing 1029 player ELO updates to the database.
+2025-01-27 11:44:41,371 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:45:12,689 - INFO - Flushing 1024 player ELO updates to the database.
+2025-01-27 11:45:12,799 - INFO - Flushing 1008 player ELO updates to the database.
+2025-01-27 11:45:12,894 - INFO - Flushing 1015 player ELO updates to the database.
+2025-01-27 11:45:12,982 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:45:44,332 - INFO - Flushing 1000 player ELO updates to the database.
+2025-01-27 11:45:44,456 - INFO - Flushing 1004 player ELO updates to the database.
+2025-01-27 11:45:44,549 - INFO - Flushing 1007 player ELO updates to the database.
+2025-01-27 11:45:44,651 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:46:15,332 - INFO - Flushing 1018 player ELO updates to the database.
+2025-01-27 11:46:15,442 - INFO - Flushing 1022 player ELO updates to the database.
+2025-01-27 11:46:15,542 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:46:15,637 - INFO - Flushing 1001 player ELO updates to the database.
+2025-01-27 11:46:15,721 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:46:47,295 - INFO - Flushing 1025 player ELO updates to the database.
+2025-01-27 11:46:47,405 - INFO - Flushing 1030 player ELO updates to the database.
+2025-01-27 11:46:47,506 - INFO - Flushing 1009 player ELO updates to the database.
+2025-01-27 11:46:47,590 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:47:19,076 - INFO - Flushing 1017 player ELO updates to the database.
+2025-01-27 11:47:19,186 - INFO - Flushing 1010 player ELO updates to the database.
+2025-01-27 11:47:19,334 - INFO - Flushing 1011 player ELO updates to the database.
+2025-01-27 11:47:19,423 - INFO - Batch completed. Processed 100 games.
+2025-01-27 11:47:19,423 - INFO - Flushing 692 player ELO updates to the database.

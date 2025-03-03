@@ -1,0 +1,2 @@
+[console_scripts]
+footy-cli = footy.main:start_app

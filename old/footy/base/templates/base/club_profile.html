@@ -1,0 +1,81 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<style>
+    .player-stats-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        /* Allocate 1/5 for feed, 4/5 for club info */
+        gap: 20px;
+        /* Add space between the sections */
+    }
+
+    .feed-container {
+        grid-column: 1 / 2;
+        /* Feed will take 1/5 of the total width */
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid Black;
+    }
+
+    /* make the table a 100% wide by default */
+    table {
+        width: 100%;
+    }
+
+    /* if the browser window is at least 800px-s wide: */
+    @media screen and (min-width: 800px) {
+        table {
+            width: 90%;
+        }
+    }
+
+    /* if the browser window is at least 1000px-s wide: */
+    @media screen and (min-width: 1000px) {
+        table {
+            width: 80%;
+        }
+    }
+</style>
+<div class="player-stats-container">
+
+
+    <!-- Feed (1/5th of width, placeholder for now) -->
+    <div class="feed-container">
+        <h2>Feed</h2>
+        <!-- Placeholder content, you can replace it with real content later -->
+        <p>Feed content goes here.</p>
+    </div>
+
+
+    <!-- Table (1/5th of width) -->
+    <div class="club-table">
+        <h1>{{ club.name }}</h1>
+
+        <h2>{{ player_stats.competition }} Stats</h2>
+
+        <table class='table' border="1">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for field_name, field_value in fields %}
+                <tr>
+                    <td>{{ field_name }}</td>
+                    <td>{{ field_value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+{% endblock content %}

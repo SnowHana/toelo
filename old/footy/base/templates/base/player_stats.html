@@ -1,0 +1,106 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<style>
+    .player-stats-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        gap: 20px;
+        /* Add space between the sections */
+    }
+
+    .feed-container {
+        grid-column: 1 / 2;
+        /* Will be used for the feed (currently placeholder) */
+    }
+
+    .graph-container {
+        grid-column: 2 / 3;
+        /* Make it occupy the middle column */
+    }
+
+    .player-stats-table {
+        grid-column: 3 / 4;
+        /* Make it occupy the first column */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+    }
+</style>
+<div class="player-stats-container">
+
+
+    <!-- Feed (1/5th of width, placeholder for now) -->
+    <div class="feed-container">
+        <h2>Feed</h2>
+        <!-- Placeholder content, you can replace it with real content later -->
+        <p>Feed content goes here.</p>
+    </div>
+
+
+    <!-- Graph (3/5th of width) -->
+    <div class="graph-container">
+        <h1>Graph</h1>
+        <div id="graph-container" style="width: 100%; height: 600px;"></div>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(".clickable-row").click(function () {
+                    var feature = $(this).data("feature");
+
+                    $.ajax({
+                        url: "{% url 'generate_graph' player_stats.player.slug %}",
+                        data: {
+                            'feature': feature
+                        },
+                        success: function (response) {
+                            var graphData = JSON.parse(response.graph_json);
+                            Plotly.react('graph-container', graphData.data, graphData.layout);
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+
+    <!-- Table (1/5th of width) -->
+    <div class="player-stats-table">
+        <h1>{{ player_stats.player.name }}</h1>
+
+        <h2>{{ player_stats.competition }} Stats</h2>
+
+        <table class='table' border="1">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for field_name, field_value in fields %}
+                <tr class="clickable-row" data-feature="{{ field_name }}">
+                    <td>{{ field_name }}</td>
+                    <td>{{ field_value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,45 @@
+1715740741860	geckodriver	INFO	Listening on 127.0.0.1:50191
+1715740743114	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... e" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/nh/kbd4vyw93l9_cfg59h74rpwh0000gn/T/rust_mozprofilePEfPM1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1715740743700	Marionette	INFO	Marionette enabled
+1715740744221	Marionette	INFO	Listening on port 50203
+Read port: 50203
+1715740744720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1715740757901	Marionette	INFO	Stopped listening on port 50203
+JavaScript warning: https://www.transfermarkt.com/premier-league/transfers/wettbewerb/GB1/saison_id/2022, line 7: Script terminated by timeout at:
+e/n.__tcfapi@https://www.transfermarkt.com/premier-league/transfers/wettbewerb/GB1/saison_id/2022:7:453
+11272/g/</i/<@https://cp.transfermarkt.com/chunks/cp-chunk-cmp-sourcepoint.20240514205621-580a49af99.3e1cafbe8b370d1a62b6.js:1:2567
+
+1715871945479	geckodriver	INFO	Listening on 127.0.0.1:49635
+1715871946790	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... e" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/nh/kbd4vyw93l9_cfg59h74rpwh0000gn/T/rust_mozprofileYqxoeL"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1715871947349	Marionette	INFO	Marionette enabled
+1715871947918	Marionette	INFO	Listening on port 49646
+Read port: 49646
+1715871948473	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1715871979723	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 236))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 236))
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 236))
+1715872006250	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1715872040515	geckodriver	INFO	Listening on 127.0.0.1:49745
+1715872041799	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... e" "-headless" "-foreground" "-no-remote" "-profile" "/var/folders/nh/kbd4vyw93l9_cfg59h74rpwh0000gn/T/rust_mozprofilewWelrY"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1715872042386	Marionette	INFO	Marionette enabled
+1715872042800	Marionette	INFO	Listening on port 49757
+Read port: 49757
+1715872043441	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+1715872056261	Marionette	INFO	Stopped listening on port 49757
+JavaScript warning: https://cp.transfermarkt.com/chunks/cp-chunk-cmp-sourcepoint.20240515084128-0853e47e91.3e1cafbe8b370d1a62b6.js, line 1: Script terminated by timeout at:
+11272/g/</i/<@https://cp.transfermarkt.com/chunks/cp-chunk-cmp-sourcepoint.20240515084128-0853e47e91.3e1cafbe8b370d1a62b6.js:1:2565
+

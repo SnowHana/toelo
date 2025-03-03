@@ -1,0 +1,733 @@
+2024-12-03 13:35:44,867 - INFO - Starting ELO update for 59811 games.
+2024-12-03 13:36:29,383 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-03 13:36:29,870 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-03 13:36:30,081 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-03 13:36:30,278 - INFO - Batch completed. Processed 100 games.
+2024-12-03 13:37:11,619 - INFO - Flushing 1015 player ELO updates to the database.
+2024-12-03 13:37:11,798 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-03 13:37:11,960 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-03 13:37:12,083 - INFO - Batch completed. Processed 100 games.
+2024-12-03 13:37:12,084 - INFO - Processed 200 games. Exiting...
+2024-12-03 15:10:15,318 - INFO - Starting ELO update for 10 games.
+2024-12-03 15:10:21,651 - INFO - Batch completed. Processed 10 games.
+2024-12-03 15:10:21,652 - INFO - Flushing 300 player ELO updates to the database.
+2024-12-03 15:12:14,808 - INFO - Starting ELO update for 10 games.
+2024-12-03 15:12:14,809 - INFO - START: (2284485, '2013-02-14') - END: (2231554, '2013-02-15')
+2024-12-03 15:12:21,543 - INFO - Batch completed. Processed 10 games.
+2024-12-03 15:12:21,543 - INFO - Flushing 275 player ELO updates to the database.
+2024-12-03 15:13:04,000 - INFO - Starting ELO update for 500 games.
+2024-12-03 15:13:04,000 - INFO - START: (2240154, '2013-02-15') - END: (2244111, '2013-03-15')
+2024-12-03 15:13:48,954 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-03 15:13:49,208 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-03 15:13:49,446 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-03 15:13:49,571 - INFO - Batch completed. Processed 100 games.
+2024-12-03 15:14:35,856 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-03 15:14:36,141 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-03 15:14:36,432 - INFO - Flushing 1008 player ELO updates to the database.
+2024-12-03 15:14:36,568 - INFO - Batch completed. Processed 100 games.
+2024-12-03 15:15:17,282 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-03 15:15:17,447 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-03 15:15:17,636 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-03 15:15:17,782 - INFO - Batch completed. Processed 100 games.
+2024-12-03 15:15:59,327 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-03 15:15:59,670 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-03 15:15:59,826 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-03 15:15:59,989 - INFO - Batch completed. Processed 100 games.
+2024-12-03 15:16:40,858 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-03 15:16:41,013 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-03 15:16:41,205 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-03 15:16:41,357 - INFO - Batch completed. Processed 100 games.
+2024-12-03 15:16:41,357 - INFO - Flushing 789 player ELO updates to the database.
+2024-12-21 17:51:52,446 - INFO - Starting ELO update for 100 games.
+2024-12-21 17:51:52,449 - INFO - START: (2250402, '2013-03-15') - END: (2289292, '2013-03-17')
+2024-12-21 17:52:16,107 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-21 17:52:16,289 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-21 17:52:16,390 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-21 17:52:16,470 - INFO - Batch completed. Processed 100 games.
+2024-12-21 17:52:16,470 - INFO - Flushing 235 player ELO updates to the database.
+2024-12-21 22:31:09,104 - INFO - Starting ELO update for 100 games.
+2024-12-21 22:31:09,105 - INFO - START: (2289293, '2013-03-17') - END: (2250416, '2013-03-31')
+2024-12-21 22:31:41,154 - INFO - Flushing 1015 player ELO updates to the database.
+2024-12-21 22:31:41,289 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-21 22:31:41,405 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-21 22:31:41,423 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x10cff79b0>: pipeline aborted
+2024-12-21 22:31:41,424 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-21 22:31:41,442 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-21 22:31:41,465 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-21 22:31:41,508 - INFO - Batch completed. Processed 100 games.
+2024-12-21 22:31:41,509 - INFO - Flushing 228 player ELO updates to the database.
+2024-12-21 22:31:41,526 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x113380800>: pipeline aborted
+2024-12-21 22:31:41,527 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:03,234 - INFO - Starting ELO update for 100 games.
+2024-12-22 01:18:03,235 - INFO - START: (2250417, '2013-03-31') - END: (2224714, '2013-04-07')
+2024-12-22 01:18:57,655 - INFO - Flushing 1046 player ELO updates to the database.
+2024-12-22 01:18:57,723 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x10ca51640>: pipeline aborted
+2024-12-22 01:18:57,724 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:57,784 - INFO - Flushing 1042 player ELO updates to the database.
+2024-12-22 01:18:57,840 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:57,852 - INFO - Flushing 1048 player ELO updates to the database.
+2024-12-22 01:18:57,867 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x10cb63ce0>: pipeline aborted
+2024-12-22 01:18:57,868 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:57,929 - INFO - Flushing 1048 player ELO updates to the database.
+2024-12-22 01:18:57,950 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x112f40950>: pipeline aborted
+2024-12-22 01:18:57,951 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:57,964 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-22 01:18:57,983 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x112f41250>: pipeline aborted
+2024-12-22 01:18:57,983 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:57,994 - INFO - Flushing 1048 player ELO updates to the database.
+2024-12-22 01:18:58,011 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-22 01:18:58,017 - INFO - Batch completed. Processed 100 games.
+2024-12-22 01:18:58,017 - INFO - Flushing 340 player ELO updates to the database.
+2024-12-22 01:18:58,034 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x112f400e0>: pipeline aborted
+2024-12-22 01:18:58,035 - ERROR - Error flushing player ELO updates: there is no unique or exclusion constraint matching the ON CONFLICT specification
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2024-12-23 10:31:06,966 - INFO - Starting ELO update for 500 games.
+2024-12-23 10:31:06,966 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2254932, datetime.date(2012, 8, 23))
+2024-12-23 10:31:09,322 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:31:11,284 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:31:13,186 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:31:15,110 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:31:17,106 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:39:20,405 - INFO - Starting ELO update for 100 games.
+2024-12-23 10:39:20,406 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2240717, datetime.date(2012, 7, 24))
+2024-12-23 10:39:54,509 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 10:39:54,857 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:39:54,857 - INFO - Flushing 862 player ELO updates to the database.
+2024-12-23 10:40:11,453 - INFO - Starting ELO update for 1000 games.
+2024-12-23 10:40:11,453 - INFO - START: (2244351, datetime.date(2012, 7, 24)) - END: (2231412, datetime.date(2012, 9, 25))
+2024-12-23 10:40:40,911 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 10:40:41,120 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:50:05,291 - INFO - Starting ELO update for 1000 games.
+2024-12-23 10:50:05,292 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2225481, datetime.date(2012, 9, 22))
+2024-12-23 10:50:41,043 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 10:50:41,925 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:51:12,320 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 10:51:12,970 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 10:51:13,460 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:51:43,443 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 10:51:43,603 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 10:51:43,746 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 10:51:43,829 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:52:06,791 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 10:52:06,931 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 10:52:07,086 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 10:52:07,164 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:52:29,406 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 10:52:29,533 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 10:52:29,627 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:52:55,233 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 10:52:55,340 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 10:52:55,438 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 10:52:55,532 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:53:26,662 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 10:53:26,767 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 10:53:26,881 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 10:53:26,965 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:53:49,947 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 10:53:50,043 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 10:53:50,133 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 10:53:50,220 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:54:13,456 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 10:54:13,570 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 10:54:13,742 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 10:54:13,832 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:54:41,321 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 10:54:41,982 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 10:54:42,767 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 10:54:43,378 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:54:43,378 - INFO - Flushing 820 player ELO updates to the database.
+2024-12-23 10:55:35,415 - INFO - Starting ELO update for 5000 games.
+2024-12-23 10:55:35,417 - INFO - START: (2225482, datetime.date(2012, 9, 22)) - END: (2360965, datetime.date(2013, 8, 29))
+2024-12-23 10:56:02,510 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 10:56:02,636 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 10:56:02,676 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x1133f00e0>: pipeline aborted
+2024-12-23 10:56:02,676 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2905.4758174829835).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2905.4758174829835).
+2024-12-23 10:56:02,778 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 10:56:02,891 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:56:29,342 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 10:56:29,446 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 10:56:29,531 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:56:57,483 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 10:56:57,585 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 10:56:57,680 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 10:56:57,793 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:57:24,461 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 10:57:24,554 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 10:57:24,644 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 10:57:24,753 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:57:53,812 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 10:57:53,957 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 10:57:53,982 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x1133f2120>: pipeline aborted
+2024-12-23 10:57:53,983 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2808.121085307376).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2808.121085307376).
+2024-12-23 10:57:54,004 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 10:57:54,132 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:58:20,347 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 10:58:20,454 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 10:58:20,550 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 10:58:20,667 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:58:48,429 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 10:58:48,539 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2777.646201626922).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2777.646201626922).
+2024-12-23 10:58:48,564 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 10:58:48,656 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 10:58:48,747 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:59:17,090 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-23 10:59:17,200 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 10:59:17,303 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 10:59:17,389 - INFO - Batch completed. Processed 100 games.
+2024-12-23 10:59:46,119 - INFO - Flushing 1008 player ELO updates to the database.
+2024-12-23 10:59:46,226 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 10:59:46,413 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 10:59:46,504 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:00:15,007 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-23 11:00:15,429 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-23 11:00:15,536 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 11:00:15,625 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:00:44,116 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:00:44,219 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 11:00:44,320 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-23 11:00:44,405 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:01:12,621 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 11:01:12,664 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x1133f2f00>: pipeline aborted
+2024-12-23 11:01:12,664 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2787.7069938419827).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2787.7069938419827).
+2024-12-23 11:01:12,693 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 11:01:12,783 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 11:01:12,869 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:01:41,104 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 11:01:41,213 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:01:41,312 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:01:41,417 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:02:12,881 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-23 11:02:13,070 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-23 11:02:13,204 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-23 11:02:13,326 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:02:44,558 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-23 11:02:44,666 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 11:02:44,812 - INFO - Flushing 1029 player ELO updates to the database.
+2024-12-23 11:02:44,894 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:03:15,661 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:03:15,766 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 11:03:15,857 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:03:15,940 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:03:46,525 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 11:03:46,557 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x1133f3a10>: pipeline aborted
+2024-12-23 11:03:46,558 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 3024.494837766704).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 3024.494837766704).
+2024-12-23 11:03:46,590 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 11:03:46,959 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 11:03:47,041 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:04:17,797 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-23 11:04:17,896 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 11:04:17,989 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:04:18,072 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:04:48,738 - INFO - Flushing 1015 player ELO updates to the database.
+2024-12-23 11:04:48,833 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 11:04:48,929 - INFO - Flushing 1029 player ELO updates to the database.
+2024-12-23 11:04:49,013 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:05:21,347 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:05:21,442 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:05:21,531 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:05:21,618 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:05:52,733 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:05:52,860 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 11:05:53,063 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 11:05:53,166 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:06:23,965 - INFO - Flushing 1015 player ELO updates to the database.
+2024-12-23 11:06:24,113 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:06:24,268 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:06:24,373 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:06:53,893 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:06:54,179 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 11:06:54,365 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 11:06:54,532 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:07:22,591 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 11:07:22,644 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 2777.9108805882706).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 2777.9108805882706).
+2024-12-23 11:07:22,664 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 11:07:22,761 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:07:22,852 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:07:49,489 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:07:49,593 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 11:07:49,683 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 11:07:49,803 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:08:16,443 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:08:16,552 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:08:16,649 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 11:08:16,757 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:08:43,568 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:08:43,677 - INFO - Flushing 1029 player ELO updates to the database.
+2024-12-23 11:08:43,788 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:08:43,854 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x11334bfb0>: pipeline aborted
+2024-12-23 11:08:43,854 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 2385.850777996103).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 2385.850777996103).
+2024-12-23 11:08:43,876 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:08:43,956 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:09:10,772 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-23 11:09:10,895 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:09:10,994 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 11:09:11,080 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:09:37,525 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 11:09:37,647 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:09:37,740 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:09:37,836 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:10:05,468 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:10:05,567 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:10:05,714 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 11:10:05,815 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:10:32,177 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 11:10:32,309 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 11:10:32,485 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 11:10:32,584 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:10:58,703 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:10:58,819 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:10:58,927 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 11:10:59,032 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:11:25,087 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 11:11:25,564 - INFO - Flushing 1021 player ELO updates to the database.
+2024-12-23 11:11:25,764 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 11:11:25,944 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 11:11:26,160 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:11:52,466 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:11:52,568 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:11:52,677 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-23 11:11:52,760 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x11334bd70>: pipeline aborted
+2024-12-23 11:11:52,760 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3009.891345314616).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3009.891345314616).
+2024-12-23 11:11:52,770 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:12:19,943 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-23 11:12:20,057 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:12:20,106 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x1133766c0>: pipeline aborted
+2024-12-23 11:12:20,107 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3003.120191136679).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3003.120191136679).
+2024-12-23 11:12:20,126 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-23 11:12:20,237 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:12:48,266 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 11:12:48,372 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 11:12:48,473 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 11:12:48,580 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:13:21,055 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:13:21,283 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 11:13:21,488 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-23 11:13:21,597 - INFO - Flushing 1029 player ELO updates to the database.
+2024-12-23 11:13:21,671 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:13:49,724 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:13:49,845 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 11:13:49,957 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 11:13:50,067 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:14:19,224 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 11:14:19,431 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-23 11:14:19,597 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-23 11:14:19,770 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:14:48,303 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:14:48,435 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:14:48,810 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 11:14:48,862 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3166.6608192509316).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3166.6608192509316).
+2024-12-23 11:14:48,879 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:15:16,450 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 11:15:16,566 - INFO - Flushing 1027 player ELO updates to the database.
+2024-12-23 11:15:16,725 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 11:15:16,785 - WARNING - error ignored terminating <psycopg.Pipeline [INERROR, pipeline=ON] (host=localhost user=postgres database=football) at 0x113349c10>: pipeline aborted
+2024-12-23 11:15:16,788 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3198.9028616654796).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 175, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2013, null, null, null, null, null, null, 3198.9028616654796).
+2024-12-23 11:15:16,819 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 11:15:16,928 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:15:43,174 - INFO - Flushing 1015 player ELO updates to the database.
+2024-12-23 11:15:43,287 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-23 11:15:43,390 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:15:43,494 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:16:21,441 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:16:21,580 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-23 11:16:22,318 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:20:19,603 - INFO - Starting ELO update for 1000 games.
+2024-12-23 11:20:19,603 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2225481, datetime.date(2012, 9, 22))
+2024-12-23 11:20:45,623 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:20:45,748 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:21:12,134 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 11:21:12,231 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:21:12,331 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:21:38,954 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:21:39,068 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:21:39,189 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 11:21:39,272 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:22:05,563 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 11:22:05,684 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 11:22:05,773 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 11:22:05,858 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:22:32,000 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:22:32,109 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 11:22:32,201 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:22:58,207 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 11:22:58,325 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 11:22:58,444 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 11:22:58,540 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:23:25,902 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:23:26,019 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 11:23:26,137 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 11:23:26,231 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:23:52,696 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 11:23:52,798 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 11:23:52,894 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 11:23:53,007 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:24:19,411 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 11:24:19,513 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 11:24:19,610 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:24:19,790 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:24:45,940 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:24:46,062 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 11:24:46,164 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 11:24:46,278 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:24:46,279 - INFO - Flushing 820 player ELO updates to the database.
+2024-12-23 11:24:55,841 - INFO - Starting ELO update for 1000 games.
+2024-12-23 11:24:55,841 - INFO - START: (2225482, datetime.date(2012, 9, 22)) - END: (2262473, datetime.date(2012, 11, 8))
+2024-12-23 11:25:22,939 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:25:23,093 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:25:23,132 - ERROR - Error flushing player ELO updates: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2901.504761296734).
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 182, in _flush_player_elo_updates
+    cur.executemany(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/psycopg/cursor.py", line 128, in executemany
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "player_id" of relation "players_elo" violates not-null constraint
+DETAIL:  Failing row contains (null, 2012, null, null, null, null, null, null, 2901.504761296734).
+2024-12-23 11:25:23,193 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:25:23,282 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:25:49,382 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 11:25:49,489 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 11:25:49,579 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:26:15,614 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 11:26:15,749 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 11:26:15,892 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 11:26:16,015 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:30:02,831 - INFO - Starting ELO update for 500 games.
+2024-12-23 11:30:02,832 - INFO - START: (2227461, datetime.date(2012, 9, 22)) - END: (2231514, datetime.date(2012, 10, 20))
+2024-12-23 11:30:29,729 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 11:30:29,745 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _, _ = player_elo_updates
+    ^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2024-12-23 11:30:29,808 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:30:29,822 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _, _ = player_elo_updates
+    ^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2024-12-23 11:30:29,846 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 11:30:29,860 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _, _ = player_elo_updates
+    ^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2024-12-23 11:30:29,862 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:31:31,617 - INFO - Starting ELO update for 100 games.
+2024-12-23 11:31:31,618 - INFO - START: (2227470, datetime.date(2012, 9, 22)) - END: (2240554, datetime.date(2012, 9, 25))
+2024-12-23 11:31:58,458 - INFO - Flushing 1008 player ELO updates to the database.
+2024-12-23 11:31:58,476 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _ = player_elo_updates
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-23 11:31:58,538 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:31:58,553 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _ = player_elo_updates
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-23 11:31:58,580 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 11:31:58,594 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _ = player_elo_updates
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-23 11:31:58,598 - INFO - Batch completed. Processed 100 games.
+2024-12-23 11:31:58,598 - INFO - Flushing 102 player ELO updates to the database.
+2024-12-23 11:31:58,617 - ERROR - Error flushing player ELO updates: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/src/player_elo/elo_updater.py", line 183, in _flush_player_elo_updates
+    player_id, _ = player_elo_updates
+    ^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+2024-12-23 11:33:43,416 - INFO - Starting ELO update for 5 games.
+2024-12-23 11:33:43,416 - INFO - START: (2240555, datetime.date(2012, 9, 25)) - END: (2258359, datetime.date(2012, 9, 25))
+2024-12-23 11:35:39,703 - INFO - Starting ELO update for 10 games.
+2024-12-23 11:35:39,704 - INFO - START: (2227470, datetime.date(2012, 9, 22)) - END: (2242901, datetime.date(2012, 9, 22))
+2024-12-23 11:36:02,943 - INFO - Starting ELO update for 10 games.
+2024-12-23 11:36:02,943 - INFO - START: (2227470, datetime.date(2012, 9, 22)) - END: (2242901, datetime.date(2012, 9, 22))
+2024-12-23 11:38:24,913 - INFO - Starting ELO update for 10 games.
+2024-12-23 11:38:24,914 - INFO - START: (2227470, datetime.date(2012, 9, 22)) - END: (2242901, datetime.date(2012, 9, 22))
+2024-12-23 11:38:29,314 - INFO - Batch completed. Processed 10 games.
+2024-12-23 11:38:29,315 - INFO - Flushing 328 player ELO updates to the database.
+2024-12-23 11:38:35,153 - INFO - Starting ELO update for 100 games.
+2024-12-23 11:38:35,153 - INFO - START: (2242903, datetime.date(2012, 9, 22)) - END: (2266051, datetime.date(2012, 9, 25))
+2024-12-23 12:56:26,699 - INFO - Starting ELO update for 1000 games.
+2024-12-23 12:56:26,699 - INFO - START: (2231978, datetime.date(2012, 7, 3)) - END: (2225481, datetime.date(2012, 9, 22))
+2024-12-23 12:56:48,383 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 12:56:48,978 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:57:11,446 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 12:57:11,549 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 12:57:11,646 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:57:35,033 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 12:57:35,130 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 12:57:35,225 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 12:57:35,323 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:57:58,996 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 12:57:59,099 - INFO - Flushing 1003 player ELO updates to the database.
+2024-12-23 12:57:59,187 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 12:57:59,284 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:58:23,966 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 12:58:24,059 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 12:58:24,157 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:58:49,919 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 12:58:50,016 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 12:58:50,112 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 12:58:50,218 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:59:14,736 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 12:59:14,840 - INFO - Flushing 1013 player ELO updates to the database.
+2024-12-23 12:59:14,941 - INFO - Flushing 1004 player ELO updates to the database.
+2024-12-23 12:59:15,039 - INFO - Batch completed. Processed 100 games.
+2024-12-23 12:59:40,217 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 12:59:40,311 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 12:59:40,400 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 12:59:40,498 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:00:06,235 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 13:00:06,340 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 13:00:06,431 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 13:00:06,538 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:00:31,909 - INFO - Flushing 1010 player ELO updates to the database.
+2024-12-23 13:00:32,001 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 13:00:32,103 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 13:00:32,212 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:00:32,212 - INFO - Flushing 820 player ELO updates to the database.
+2024-12-23 13:01:22,908 - INFO - Starting ELO update for 1000 games.
+2024-12-23 13:01:22,909 - INFO - START: (2225482, datetime.date(2012, 9, 22)) - END: (2262473, datetime.date(2012, 11, 8))
+2024-12-23 13:01:45,008 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 13:01:45,157 - INFO - Flushing 1032 player ELO updates to the database.
+2024-12-23 13:01:45,276 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 13:01:45,426 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:02:11,509 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 13:02:11,629 - INFO - Flushing 1012 player ELO updates to the database.
+2024-12-23 13:02:11,734 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:02:37,455 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 13:02:37,551 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-23 13:02:37,640 - INFO - Flushing 1011 player ELO updates to the database.
+2024-12-23 13:02:37,773 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:03:03,183 - INFO - Flushing 1018 player ELO updates to the database.
+2024-12-23 13:03:03,310 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-23 13:03:03,415 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 13:03:03,511 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:03:29,775 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 13:03:29,871 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-23 13:03:29,968 - INFO - Flushing 1024 player ELO updates to the database.
+2024-12-23 13:03:30,072 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:03:55,971 - INFO - Flushing 1006 player ELO updates to the database.
+2024-12-23 13:03:56,071 - INFO - Flushing 1030 player ELO updates to the database.
+2024-12-23 13:03:56,177 - INFO - Flushing 1031 player ELO updates to the database.
+2024-12-23 13:03:56,281 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:04:22,126 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-23 13:04:22,217 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-23 13:04:22,322 - INFO - Flushing 1007 player ELO updates to the database.
+2024-12-23 13:04:22,424 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:04:48,117 - INFO - Flushing 1025 player ELO updates to the database.
+2024-12-23 13:04:48,209 - INFO - Flushing 1002 player ELO updates to the database.
+2024-12-23 13:04:48,305 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-23 13:04:48,414 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:05:14,413 - INFO - Flushing 1008 player ELO updates to the database.
+2024-12-23 13:05:14,538 - INFO - Flushing 1028 player ELO updates to the database.
+2024-12-23 13:05:14,661 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-23 13:05:14,748 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:05:40,827 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-23 13:05:40,920 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-23 13:05:41,020 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-23 13:05:41,112 - INFO - Batch completed. Processed 100 games.
+2024-12-23 13:05:41,112 - INFO - Flushing 155 player ELO updates to the database.
+2024-12-27 11:57:15,869 - INFO - Remaining games to analyse: 58884
+2024-12-27 11:57:15,986 - INFO - Starting ELO update for 100 games.
+2024-12-27 11:57:15,986 - INFO - START: (2262474, datetime.date(2012, 11, 8)) - END: (2242926, datetime.date(2012, 11, 11))
+2024-12-27 11:57:15,986 - INFO - ELO Updater start: (2262474, datetime.date(2012, 11, 8)) games waiting for an analyse
+2024-12-27 11:57:53,930 - INFO - Remaining games to analyse: 58884
+2024-12-27 11:57:53,952 - INFO - Starting ELO update for 100 games.
+2024-12-27 11:57:53,953 - INFO - START: (2262474, datetime.date(2012, 11, 8)) - END: (2242926, datetime.date(2012, 11, 11))
+2024-12-27 11:57:53,953 - INFO - ELO Updater start: (2262474, datetime.date(2012, 11, 8)) games waiting for an analyse
+2024-12-27 11:58:19,647 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-27 11:58:19,837 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-27 11:58:19,979 - INFO - Flushing 1033 player ELO updates to the database.
+2024-12-27 11:58:20,061 - INFO - Batch completed. Processed 100 games.
+2024-12-27 11:58:20,061 - INFO - Flushing 202 player ELO updates to the database.
+2024-12-27 11:58:29,531 - INFO - Remaining games to analyse: 60818
+2024-12-27 11:58:29,557 - INFO - Starting ELO update for 500 games.
+2024-12-27 11:58:29,557 - INFO - START: (2243958, datetime.date(2012, 11, 11)) - END: (2262504, datetime.date(2012, 12, 6))
+2024-12-27 11:58:29,557 - INFO - ELO Updater start: (2243958, datetime.date(2012, 11, 11)) games waiting for an analyse
+2024-12-27 11:58:55,139 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-27 11:58:55,287 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-27 11:58:55,503 - INFO - Flushing 1022 player ELO updates to the database.
+2024-12-27 11:58:55,587 - INFO - Batch completed. Processed 100 games.
+2024-12-27 11:59:24,357 - INFO - Flushing 1026 player ELO updates to the database.
+2024-12-27 11:59:24,651 - INFO - Flushing 1016 player ELO updates to the database.
+2024-12-27 11:59:25,701 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-27 11:59:25,917 - INFO - Batch completed. Processed 100 games.
+2024-12-27 11:59:55,221 - INFO - Flushing 1005 player ELO updates to the database.
+2024-12-27 11:59:55,380 - INFO - Flushing 1020 player ELO updates to the database.
+2024-12-27 11:59:55,473 - INFO - Flushing 1017 player ELO updates to the database.
+2024-12-27 11:59:55,558 - INFO - Batch completed. Processed 100 games.
+2024-12-27 12:00:25,156 - INFO - Flushing 1001 player ELO updates to the database.
+2024-12-27 12:00:25,251 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-27 12:00:25,339 - INFO - Flushing 1019 player ELO updates to the database.
+2024-12-27 12:00:25,433 - INFO - Batch completed. Processed 100 games.
+2024-12-27 12:00:52,841 - INFO - Flushing 1023 player ELO updates to the database.
+2024-12-27 12:00:52,943 - INFO - Flushing 1014 player ELO updates to the database.
+2024-12-27 12:00:53,065 - INFO - Flushing 1000 player ELO updates to the database.
+2024-12-27 12:00:53,153 - INFO - Batch completed. Processed 100 games.
+2024-12-27 12:00:53,153 - INFO - Flushing 113 player ELO updates to the database.

@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: footy
+Version: 0.1.0
+Summary: A football player analysis package
+Author-email: Daniel KIM <wujindaniel1011@gmail.com>
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
