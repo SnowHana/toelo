@@ -445,3 +445,8 @@
 2025-03-03 22:59:26,202 - INFO - Flushing 1031 player ELO updates to the database.
 2025-03-03 22:59:26,585 - INFO - Batch completed. Processed 50 games.
 2025-03-03 22:59:26,586 - INFO - Flushing 640 player ELO updates to the database.
+2025-03-04 07:52:50,522 - INFO - Remaining games to analyse: 52855
+2025-03-04 07:52:50,581 - INFO - Starting ELO update for 10 games.
+2025-03-04 07:52:50,581 - INFO - START: (2451567, datetime.date(2014, 5, 7)) - END: (2329457, datetime.date(2014, 5, 8))
+2025-03-04 07:52:56,262 - INFO - Batch completed. Processed 10 games.
+2025-03-04 07:52:56,262 - INFO - Flushing 320 player ELO updates to the database.
