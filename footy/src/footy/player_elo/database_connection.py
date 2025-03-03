@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Dict
 
 import psycopg
+from sqlalchemy import create_engine
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
@@ -13,6 +14,21 @@ DATABASE_CONFIG = {
     "host": "localhost",
     "port": "5432",
 }
+
+
+def get_connection_string(config: Dict[str, str]) -> str:
+    """Return a SQLAlchemy-compatible connection string."""
+    return (
+        f"postgresql+psycopg2://{config['user']}:{config['password']}"
+        f"@{config['host']}:{config['port']}/{config['dbname']}"
+    )
+
+
+def get_engine(config: Dict[str, str] = DATABASE_CONFIG):
+    """Create and return an SQLAlchemy engine based on the given configuration."""
+    conn_str = get_connection_string(config)
+    engine = create_engine(conn_str)
+    return engine
 
 
 class DatabaseConnection:
