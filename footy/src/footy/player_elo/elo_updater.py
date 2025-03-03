@@ -249,7 +249,7 @@ class EloUpdater:
             logging.error(f"Error flushing player ELO updates: {e}", exc_info=True)
 
 
-def update_elo():
+def update_elo(process_game_num: int):
     """Main Update Function.
     Logs as well.
     Raises:
@@ -266,9 +266,9 @@ def update_elo():
     )
 
     try:
-        process_game_num = int(
-            input("Enter number of games you want to process (recommended 100+): ")
-        )
+        # process_game_num = int(
+        #     input("Enter number of games you want to process (recommended 100+): ")
+        # )
         if process_game_num <= 0:
             raise ValueError("Number of games must be greater than 0.")
     except ValueError as e:
