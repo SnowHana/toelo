@@ -80,7 +80,7 @@ class EloUpdater:
                                 WHERE (date::DATE >  %s::DATE OR (date::DATE = %s::DATE AND game_id > %s));""",
                 (last_processed_date, last_processed_date, last_processed_game_id),
             )
-            logger.info(f"Remaining games to analyse: {self.cur.fetchone()[0]}")
+            logging.info(f"Remaining games to analyse: {self.cur.fetchone()[0]}")
 
             # Bulk-fetch batch sized games data
             self.cur.execute(
@@ -100,7 +100,7 @@ class EloUpdater:
             )
         else:
             self.cur.execute("""SELECT COUNT(*) FROM valid_games;""")
-            logger.info(f"Remaining games to analyse: {self.cur.fetchone()[0]}")
+            logging.info(f"Remaining games to analyse: {self.cur.fetchone()[0]}")
 
             # Start from scratch
             self.cur.execute(
@@ -130,7 +130,7 @@ class EloUpdater:
             # Each process opens its own database connection
             with DatabaseConnection(db_config) as conn:
                 with conn.cursor() as cur:
-                    logger.info(f"Processing game {game_id} on date {game_date}")
+                    logging.info(f"Processing game {game_id} on date {game_date}")
 
                     game_analysis = GameAnalysis(cur, game_id=game_id)
 
@@ -151,7 +151,7 @@ class EloUpdater:
                         # Case where player_id is null
                         # Log and skip.
                         if player_id is None:
-                            logger.error(
+                            logging.error(
                                 f"Game {game_id} contains a player with NULL player id."
                             )
                         player_analysis = PlayerAnalysis(game_analysis, player_id)
@@ -168,7 +168,7 @@ class EloUpdater:
             return game_id, game_date, player_elo_updates
 
         except Exception as e:
-            logger.error(f"Error processing game {game_id}: {e}", exc_info=True)
+            logging.error(f"Error processing game {game_id}: {e}", exc_info=True)
             return None
 
     def update_elo_with_multiprocessing(self, db_config, games_to_process):
@@ -179,8 +179,8 @@ class EloUpdater:
         @param games_to_process:
         @return: None
         """
-        logger.info(f"Starting ELO update for {len(games_to_process)} games.")
-        logger.info(f"START: {games_to_process[0]} - END: {games_to_process[-1]}")
+        logging.info(f"Starting ELO update for {len(games_to_process)} games.")
+        logging.info(f"START: {games_to_process[0]} - END: {games_to_process[-1]}")
 
         # List to store all updates
         all_player_elo_updates = []
@@ -195,7 +195,7 @@ class EloUpdater:
         for batch in batches:
             if self.games_processed >= self.MAX_GAMES_TO_PROCESS:
                 # Exit after processing MAX GAMES
-                logger.info(f"Processed {self.games_processed} games. Exiting...")
+                logging.info(f"Processed {self.games_processed} games. Exiting...")
                 return
 
             # with Pool(processes=4) as pool:
@@ -224,7 +224,7 @@ class EloUpdater:
                         self._flush_player_elo_updates(all_player_elo_updates)
                         all_player_elo_updates = []
 
-            logger.info(f"Batch completed. Processed {len(batch)} games.")
+            logging.info(f"Batch completed. Processed {len(batch)} games.")
 
         # Final flush for any remaining updates
         if all_player_elo_updates:
@@ -236,7 +236,7 @@ class EloUpdater:
         Args:
             all_player_elo_updates (List): List of updates of players
         """
-        logger.info(
+        logging.info(
             f"Flushing {len(all_player_elo_updates)} player ELO updates to the database."
         )
         try:
@@ -255,7 +255,7 @@ class EloUpdater:
                     )
                     conn.commit()
         except Exception as e:
-            logger.error(f"Error flushing player ELO updates: {e}", exc_info=True)
+            logging.error(f"Error flushing player ELO updates: {e}", exc_info=True)
 
 
 def update_elo(process_game_num: int):
@@ -285,7 +285,7 @@ def update_elo(process_game_num: int):
         if process_game_num <= 0:
             raise ValueError("Number of games must be greater than 0.")
     except ValueError as e:
-        logger.error(f"Invalid input: {e}. Exiting...")
+        logging.error(f"Invalid input: {e}. Exiting...")
         sys.exit(1)
 
     with DatabaseConnection(DATABASE_CONFIG) as conn:
