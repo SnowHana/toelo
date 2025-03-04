@@ -36,6 +36,10 @@ def reset_elo():
 
 def run_analysis(process_game_num: int):
     try:
+        logger = get_logger(elo_updater.__name__)
+        print(logger)
+        handler = StreamlitLogHandler(st.empty().code)
+        logger.addHandler(handler)
         update_elo(process_game_num)
         st.success("ELO update completed!")
     except Exception as e:
@@ -69,9 +73,7 @@ def main():
             "Insert a number of games you wanna analyse", value=1, min_value=1, step=10
         )
         if st.button("Confirm: Run ELO Update"):
-            logger = get_logger(elo_updater.__name__)
-            handler = StreamlitLogHandler(st.empty().code)
-            logger.addHandler(handler)
+
             run_analysis(process_game_num)
 
 
