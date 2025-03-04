@@ -18,6 +18,13 @@ class StreamlitLogHandler(logging.Handler):
         self.widget_update_func(msg)
 
 
+# def update_log_widget(msg):
+#     if "log_history" not in st.session_state:
+#         st.session_state.log_history = ""
+#     st.session_state.log_history += msg + "\n"
+#     st.empty().code(st.session_state.log_history, language="text")
+
+
 def reset_db():
     try:
         init_sql_db()
@@ -37,10 +44,12 @@ def reset_elo():
 def run_analysis(process_game_num: int):
     try:
         logger = get_logger(elo_updater.__name__)
-        print(logger)
+
         handler = StreamlitLogHandler(st.empty().code)
+        # handler = StreamlitLogHandler(st.container().code)
         logger.addHandler(handler)
         update_elo(process_game_num)
+
         st.success("ELO update completed!")
     except Exception as e:
         st.error(f"ELO update failed: {e}")
