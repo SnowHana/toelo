@@ -1,6 +1,8 @@
 from footy.player_elo.init_sql import init_sql_db
 from footy.player_elo.elo_updater import update_elo
 from footy.player_elo.reset_players_elo import reset_init_players_elo_db
+from footy.player_elo.database_connection import get_engine
+import pandas as pd
 import streamlit as st
 
 import logging
@@ -61,6 +63,19 @@ def run_analysis(process_game_num: int):
         st.error(f"ELO update failed: {e}")
 
 
+def display_data():
+    try:
+        # Get Engine
+        engine = get_engine()
+        query = """SELECT * FROM players_elo;"""
+        df = pd.read_sql_query(query, con=engine)
+        st.dataframe(df, use_container_width=True)
+
+        st.success("Analysed data displayed!")
+    except Exception as e:
+        st.error(f"Display data failed: {e}")
+
+
 def main():
     st.title("Football ELO")
     choice = st.radio(
@@ -75,21 +90,28 @@ def main():
     )
 
     if choice == "Reset DB":
+        # ======== 1. RESET PostgreSql DB ========
         st.write("This will delete and recreate the whole DB from scratch.")
         if st.button("Confirm: Reset Database"):
             reset_db()
     elif choice == "Reset ELO":
+        # ======== 2. RESET Players ELO (and analysed results) ========
         st.write("This resets the 'players ELO' table in the DB.")
         if st.button("Confirm: Reset Players ELO"):
             reset_elo()
     elif choice == "Run Analysis":
+        # ======== 3. KEEP running on Analysis ========
         st.write("Update ELO Data")
         process_game_num = st.number_input(
             "Insert a number of games you wanna analyse", value=1, min_value=1, step=10
         )
         if st.button("Confirm: Run ELO Update"):
-
             run_analysis(process_game_num)
+    elif choice == "Display Data":
+        # ======== 4. Display Data ========
+        st.write("Display results and data")
+        if st.button("Show Data"):
+            display_data()
 
 
 if __name__ == "__main__":
