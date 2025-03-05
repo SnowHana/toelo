@@ -68,7 +68,7 @@ class GameAnalysis:
                 """
             SELECT g.home_club_id, g.away_club_id, g.date
             FROM valid_games g
-            WHERE g.game_id = :game_id
+            WHERE g.game_id = :game_id;
         """
             ),
             {"game_id": self.game_id},
@@ -200,11 +200,12 @@ class GameAnalysis:
                 text(
                     """SELECT player_id, elo FROM players_elo
                 WHERE player_id IN (:players_list) AND season = :season;
-                """,
-                    {"players_list": self.players_list, "season": self.season},
-                )
+                """
+                ),
+                {"players_list": self.players_list, "season": self.season},
             ).fetchall()
         )
+
         # elos_data = self.cur.fetchall()
         # elos_dict = dict(elos_data)
 

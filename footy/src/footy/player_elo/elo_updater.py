@@ -1,5 +1,6 @@
 import logging
 import logging.config
+from logging.handlers import RotatingFileHandler
 import sys
 from multiprocessing import Pool
 from pathlib import Path
@@ -15,15 +16,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_PROCESS_NUM = 4
 sys.path.append(str(BASE_DIR))
 
+# ==== Logging ====
 log_file = "elo_update.log"
-# logger = logging.basicConfig(
-#     level=logging.INFO,
-#     format="%(asctime)s- %(levelname)s - %(message)s",
-#     handlers=[
-#         RotatingFileHandler(log_file, maxBytes=5 * 1024 * 1024, backupCount=5),
-#         logging.StreamHandler(),
-#     ],
-# )
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s- %(levelname)s - %(message)s",
+    handlers=[
+        RotatingFileHandler(log_file, maxBytes=5 * 1024 * 1024, backupCount=5),
+        logging.StreamHandler(),
+    ],
+)
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
@@ -158,7 +160,7 @@ class EloUpdater:
         return result
 
     @staticmethod
-    def process_game(game, conn):
+    def process_game(game):
         """
         Static method to process a SINGLE game and return player ELO updates.
 
@@ -306,10 +308,6 @@ def update_elo(process_game_num: int):
     try:
         if process_game_num <= 0:
             raise ValueError("Number of games must be greater than 0.")
-    except ValueError as e:
-        logger.error(f"Invalid input: {e}. Exiting...")
-        sys.exit(1)
-
         engine = get_engine()
         with engine.begin() as conn:
             elo_updater = EloUpdater(conn, max_games_to_process=process_game_num)
@@ -317,6 +315,9 @@ def update_elo(process_game_num: int):
             elo_updater.update_elo_with_multiprocessing(
                 DATABASE_CONFIG, games_to_process
             )
+    except ValueError as e:
+        logger.error(f"Invalid input: {e}. Exiting...")
+        sys.exit(1)
 
 
 # Main execution
