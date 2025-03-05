@@ -1,7 +1,9 @@
+from os import environ
 from footy.player_elo.init_sql import init_sql_db
 from footy.player_elo.elo_updater import update_elo
 from footy.player_elo.reset_players_elo import reset_init_players_elo_db
 from footy.player_elo.database_connection import get_engine
+import numpy as np
 import pandas as pd
 import streamlit as st
 
@@ -50,27 +52,52 @@ def reset_elo():
 
 
 def run_analysis(process_game_num: int):
-    try:
-        logger = get_logger(elo_updater.__name__)
+    with st.spinner(text="In progress...", show_time=True):
+        try:
+            logger = get_logger(elo_updater.__name__)
 
-        handler = StreamlitLogHandler(st.empty().code)
-        # handler = StreamlitLogHandler(st.container().code)
-        logger.addHandler(handler)
-        update_elo(process_game_num)
+            handler = StreamlitLogHandler(st.empty().code)
+            # handler = StreamlitLogHandler(st.container().code)
+            logger.addHandler(handler)
+            update_elo(process_game_num)
 
-        st.success("ELO update completed!")
-    except Exception as e:
-        st.error(f"ELO update failed: {e}")
+            st.success("ELO update completed!")
+        except Exception as e:
+            st.error(f"ELO update failed: {e}")
 
 
 def display_data():
     try:
+        # ======= METHOD 1 : Using st.connection() =========
+        # cloud = False
+        # DB_URL = (
+        #     environ["DB_URI"]
+        #     if cloud
+        #     else "postgresql+psycopg2://postgres:1234@localhost:5432/football"
+        # )
+        # conn = st.connection("football_db", type="sql", url=DB_URL)
+        # df = conn.query("SELECT * FROM players_elo;")
+
+        # ========== METHOD 2: pd.reqd_sql.. ==========
         # Get Engine
         engine = get_engine()
+        # query = """SELECT * FROM players_elo WHERE elo is not null ORDER BY elo DESC;"""
         query = """SELECT * FROM players_elo;"""
+        # NOTE: Ordering will be disabled if we call the raw dataframe because it is too big!
         df = pd.read_sql_query(query, con=engine)
-        st.dataframe(df, use_container_width=True)
+        # st.dataframe(
+        #     df,
+        #     use_container_width=True,
+        # )
+        # st.data_editor(df)
+        st.dataframe(df.head(100))
 
+        # TESTING
+        df = pd.DataFrame(
+            np.random.randn(10, 20), columns=("col %d" % i for i in range(20))
+        )
+
+        st.dataframe(df)
         st.success("Analysed data displayed!")
     except Exception as e:
         st.error(f"Display data failed: {e}")
