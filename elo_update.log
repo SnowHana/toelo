@@ -478,3 +478,374 @@
 2025-03-04 08:18:02,635 - INFO - START: (2329466, datetime.date(2014, 5, 11)) - END: (2332273, datetime.date(2014, 5, 11))
 2025-03-04 08:18:07,781 - INFO - Batch completed. Processed 10 games.
 2025-03-04 08:18:07,781 - INFO - Flushing 331 player ELO updates to the database.
+2025-03-05 18:08:54,087- INFO - Remaining games to analyse: 52735
+2025-03-05 18:08:54,105- INFO - Starting ELO update for 5 games.
+2025-03-05 18:08:54,105- INFO - START: (2331176, datetime.date(2014, 5, 17)) - END: (2331180, datetime.date(2014, 5, 17))
+2025-03-05 18:08:55,353- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:08:55,365- INFO - Processing game 2331176 on date 2014-05-17
+2025-03-05 18:08:55,384- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:08:55,395- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:08:57,107- ERROR - Error processing game 2331177: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111041,127032,1468...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [111041, 127032, 146854, 170903, 220878, 28705, 36039, 43458, 5431, 5672, 5942, 64229, 74687, 95732, 74687, 220878, 64229, 103563, 135490, 149444, 160404, 174196, 181380, 23918, 4217, 43960, 44625, 5521, 5578, 58890, 8060, 103563, 174196, 5521], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111041,127032,1468...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(conn, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 44, in __init__
+    self._fetch_bulk_game_data()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 55, in _fetch_bulk_game_data
+    self._fetch_player_elos()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 199, in _fetch_player_elos
+    self.conn.execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111041,127032,1468...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [111041, 127032, 146854, 170903, 220878, 28705, 36039, 43458, 5431, 5672, 5942, 64229, 74687, 95732, 74687, 220878, 64229, 103563, 135490, 149444, 160404, 174196, 181380, 23918, 4217, 43960, 44625, 5521, 5578, 58890, 8060, 103563, 174196, 5521], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-05 18:08:57,119- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:08:57,106- ERROR - Error processing game 2331176: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[108830,140776,1572...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [108830, 140776, 1572, 170460, 189441, 28845, 29311, 30690, 42267, 5281, 59938, 60540, 65, 9828, 30690, 1572, 189441, 110309, 12379, 126528, 16591, 18093, 182898, 187392, 23934, 34372, 5308, 54155, 66415, 81386, 126528, 187392], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[108830,140776,1572...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(conn, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 44, in __init__
+    self._fetch_bulk_game_data()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 55, in _fetch_bulk_game_data
+    self._fetch_player_elos()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 199, in _fetch_player_elos
+    self.conn.execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[108830,140776,1572...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [108830, 140776, 1572, 170460, 189441, 28845, 29311, 30690, 42267, 5281, 59938, 60540, 65, 9828, 30690, 1572, 189441, 110309, 12379, 126528, 16591, 18093, 182898, 187392, 23934, 34372, 5308, 54155, 66415, 81386, 126528, 187392], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-05 18:08:57,149- ERROR - Error processing game 2331178: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[102744,108354,1257...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [102744, 108354, 125783, 127048, 17693, 212420, 28987, 33942, 38536, 55709, 5614, 6270, 78917, 82324, 38536, 127048, 55709, 110622, 111283, 120091, 123305, 164230, 164928, 22860, 30825, 33831, 5676, 57510, 60604, 63463, 98351, 123305, 164928, 30825], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[102744,108354,1257...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(conn, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 44, in __init__
+    self._fetch_bulk_game_data()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 55, in _fetch_bulk_game_data
+    self._fetch_player_elos()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 199, in _fetch_player_elos
+    self.conn.execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[102744,108354,1257...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [102744, 108354, 125783, 127048, 17693, 212420, 28987, 33942, 38536, 55709, 5614, 6270, 78917, 82324, 38536, 127048, 55709, 110622, 111283, 120091, 123305, 164230, 164928, 22860, 30825, 33831, 5676, 57510, 60604, 63463, 98351, 123305, 164928, 30825], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-05 18:08:57,182- ERROR - Error processing game 2331179: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[12386,129679,14748...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [12386, 129679, 147487, 154199, 170938, 170986, 3266, 39914, 43242, 51030, 51369, 5576, 60539, 60990, 51030, 129679, 51369, 12096, 125868, 126665, 148368, 14949, 149551, 161869, 17179, 37760, 48859, 5348, 7971, 81460, 9659, 148368, 9659, 161869], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[12386,129679,14748...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(conn, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 44, in __init__
+    self._fetch_bulk_game_data()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 55, in _fetch_bulk_game_data
+    self._fetch_player_elos()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 199, in _fetch_player_elos
+    self.conn.execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[12386,129679,14748...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [12386, 129679, 147487, 154199, 170938, 170986, 3266, 39914, 43242, 51030, 51369, 5576, 60539, 60990, 51030, 129679, 51369, 12096, 125868, 126665, 148368, 14949, 149551, 161869, 17179, 37760, 48859, 5348, 7971, 81460, 9659, 148368, 9659, 161869], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-05 18:08:57,523- ERROR - Error processing game 2331180: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111051,111482,1266...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [111051, 111482, 126687, 156487, 215677, 217115, 241229, 30758, 38978, 40688, 43759, 57525, 60583, 84085, 217115, 43759, 38978, 118303, 126540, 18909, 203496, 20622, 22388, 3569, 57186, 60542, 60561, 6803, 72479, 93720, 203496, 18909], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedFunction: operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111051,111482,1266...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(conn, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 44, in __init__
+    self._fetch_bulk_game_data()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 55, in _fetch_bulk_game_data
+    self._fetch_player_elos()
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 199, in _fetch_player_elos
+    self.conn.execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedFunction) operator does not exist: integer = integer[]
+LINE 2:                 WHERE player_id IN (ARRAY[111051,111482,1266...
+                                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+
+[SQL: SELECT player_id, elo FROM players_elo
+                WHERE player_id IN (%(players_list)s) AND season = %(season)s;
+                ]
+[parameters: {'players_list': [111051, 111482, 126687, 156487, 215677, 217115, 241229, 30758, 38978, 40688, 43759, 57525, 60583, 84085, 217115, 43759, 38978, 118303, 126540, 18909, 203496, 20622, 22388, 3569, 57186, 60542, 60561, 6803, 72479, 93720, 203496, 18909], 'season': 2014}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-03-05 18:08:57,526- INFO - Batch completed. Processed 5 games.
+2025-03-05 18:38:58,602- INFO - Remaining games to analyse: 52735
+2025-03-05 18:38:58,626- INFO - Starting ELO update for 5 games.
+2025-03-05 18:38:58,626- INFO - START: (2331176, datetime.date(2014, 5, 17)) - END: (2331180, datetime.date(2014, 5, 17))
+2025-03-05 18:38:59,833- INFO - Processing game 2331176 on date 2014-05-17
+2025-03-05 18:38:59,848- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:38:59,861- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:38:59,885- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:39:01,517- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:45:24,241- INFO - Remaining games to analyse: 52734
+2025-03-05 18:45:24,266- INFO - Starting ELO update for 5 games.
+2025-03-05 18:45:24,266- INFO - START: (2331177, datetime.date(2014, 5, 17)) - END: (2331181, datetime.date(2014, 5, 17))
+2025-03-05 18:45:25,537- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:45:25,553- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:45:25,560- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:45:25,563- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:45:27,015- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:46:13,798- INFO - Remaining games to analyse: 52734
+2025-03-05 18:46:13,823- INFO - Starting ELO update for 5 games.
+2025-03-05 18:46:13,824- INFO - START: (2331177, datetime.date(2014, 5, 17)) - END: (2331181, datetime.date(2014, 5, 17))
+2025-03-05 18:46:15,050- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:46:15,050- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:46:15,112- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:46:15,161- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:46:16,279- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:46:16,672- INFO - UPDATE: Updating 2331177 on 2014-05-17.
+2025-03-05 18:46:16,678- INFO - UPDATE COMPLETE: Updated 2331177 on 2014-05-17.
+2025-03-05 18:46:16,678- INFO - UPDATE: Updating 2331178 on 2014-05-17.
+2025-03-05 18:53:21,422- INFO - Remaining games to analyse: 52733
+2025-03-05 18:53:21,443- INFO - Starting ELO update for 5 games.
+2025-03-05 18:53:21,444- INFO - START: (2331178, datetime.date(2014, 5, 17)) - END: (2331182, datetime.date(2014, 5, 17))
+2025-03-05 18:53:22,689- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:53:22,705- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:53:22,735- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:53:22,754- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:53:24,166- INFO - Processing game 2331182 on date 2014-05-17
+2025-03-05 18:53:24,595- INFO - UPDATE: Updating 2331178 on 2014-05-17.
+2025-03-05 18:53:24,599- INFO - UPDATE COMPLETE: Updated 2331178 on 2014-05-17.
+2025-03-05 18:53:24,599- INFO - UPDATE: Updating 2331179 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE COMPLETE: Updated 2331179 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE: Updating 2331180 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE COMPLETE: Updated 2331180 on 2014-05-17.
+2025-03-05 18:53:24,602- INFO - UPDATE: Updating 2331181 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE COMPLETE: Updated 2331181 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE: Updating 2331182 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE COMPLETE: Updated 2331182 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - Batch completed. Processed 5 games.
+2025-03-05 18:53:24,644- INFO - Flushing 168 player ELO updates to the database.
