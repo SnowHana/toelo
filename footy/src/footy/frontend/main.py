@@ -9,6 +9,12 @@ from streamlit.logger import get_logger
 
 
 class StreamlitLogHandler(logging.Handler):
+    """Inherits standard logging Handler so that it emits through widget_update_function
+
+    Args:
+        logging (_type_): _description_
+    """
+
     def __init__(self, widget_update_func):
         super().__init__()
         self.widget_update_func = widget_update_func
