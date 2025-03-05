@@ -31,19 +31,19 @@ def get_engine(config: Dict[str, str] = DATABASE_CONFIG):
     return engine
 
 
-class DatabaseConnection:
-    """
-    Set up connection with PostgreSQL database
-    """
+# class DatabaseConnection:
+#     """
+#     Set up connection with PostgreSQL database
+#     """
 
-    def __init__(self, config: Dict[str, str]):
-        self.config = config
-        self.conn = None
+#     def __init__(self, config: Dict[str, str]):
+#         self.config = config
+#         self.conn = None
 
-    def __enter__(self):
-        self.conn = psycopg.connect(**self.config)
-        return self.conn
+#     def __enter__(self):
+#         self.conn = psycopg.connect(**self.config)
+#         return self.conn
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.conn:
-            self.conn.close()
+#     def __exit__(self, exc_type, exc_val, exc_tb):
+#         if self.conn:
+#             self.conn.close()

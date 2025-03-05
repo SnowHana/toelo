@@ -2,7 +2,6 @@
 import psycopg
 import pandas as pd
 from footy.player_elo.database_connection import (
-    DatabaseConnection,
     DATABASE_CONFIG,
     get_engine,
 )

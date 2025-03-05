@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from footy.analysis_main import start_app
+from footy.clt_main import start_app
 
 
 def run_footy_cli_command():

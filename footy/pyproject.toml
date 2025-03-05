@@ -32,6 +32,6 @@ packages = ["footy"]  # or you could use "find_namespace:"
 include-package-data = false
 
 [project.scripts]
-footy-cli = "footy.main:start_app"
+footy-cli = "footy.clt_main:start_app"
 footy-gui = "footy.frontend.streamlit_app:launch"
 
