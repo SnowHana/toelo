@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple
 
 from psycopg import sql
 
-from footy.player_elo.database_connection import DatabaseConnection, DATABASE_CONFIG
+from footy.player_elo.database_connection import DATABASE_CONFIG
 from sqlalchemy import text
 
 # Typing

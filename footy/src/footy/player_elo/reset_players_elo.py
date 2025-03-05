@@ -1,4 +1,7 @@
-from footy.player_elo.database_connection import DatabaseConnection, DATABASE_CONFIG
+from footy.player_elo.database_connection import (
+    DATABASE_CONFIG,
+    get_engine,
+)
 
 
 # Constants
@@ -157,7 +160,8 @@ def reset_init_players_elo_db():
     """
     Reset players ELO table and process_progress table in PostgrSQL Database
     """
-    with DatabaseConnection(DATABASE_CONFIG) as conn:
+    # with DatabaseConnection(DATABASE_CONFIG) as conn:
+    with get_engine().connect() as conn:
         with conn.cursor() as cur:
             base_elo = int(input("Enter Base ELO: (Default 2500) ").strip() or 2500)
             elo_range = int(input("Enter ELO range: (Default 500) ").strip() or 500)
