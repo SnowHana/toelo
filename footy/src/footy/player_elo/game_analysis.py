@@ -2,10 +2,12 @@ import json
 from datetime import datetime
 from typing import Dict, List, Tuple
 
+from footy.player_elo.init_sql import PlayerElo
 from psycopg import sql
 
 from footy.player_elo.database_connection import DATABASE_CONFIG
 from sqlalchemy import text
+from sqlalchemy.orm import Session
 
 # Typing
 ClubGoals = Dict[int, List[int]]
@@ -22,7 +24,7 @@ class GameAnalysis:
     FULL_GAME_MINUTES = 90
     DEFAULT_ELO = 1500
 
-    def __init__(self, conn, game_id: int):
+    def __init__(self, engine, game_id: int):
         """
         Initialize the GameAnalysis instance for a specific game
 
@@ -37,7 +39,8 @@ class GameAnalysis:
         self._date = None
         self._season = None
 
-        self.conn = conn
+        self.engine = engine
+        self.conn = engine.connect()
         self.game_id = game_id
 
         # Fetch all game-related data in bulk
@@ -199,7 +202,7 @@ class GameAnalysis:
             self.conn.execute(
                 text(
                     """SELECT player_id, elo FROM players_elo
-                WHERE player_id IN (:players_list) AND season = :season;
+                WHERE player_id = ANY(:players_list) AND season = :season;
                 """
                 ),
                 {"players_list": self.players_list, "season": self.season},

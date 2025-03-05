@@ -802,3 +802,50 @@ HINT:  No operator matches the given name and argument types. You might need to 
 [parameters: {'players_list': [111051, 111482, 126687, 156487, 215677, 217115, 241229, 30758, 38978, 40688, 43759, 57525, 60583, 84085, 217115, 43759, 38978, 118303, 126540, 18909, 203496, 20622, 22388, 3569, 57186, 60542, 60561, 6803, 72479, 93720, 203496, 18909], 'season': 2014}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-03-05 18:08:57,526- INFO - Batch completed. Processed 5 games.
+2025-03-05 18:38:58,602- INFO - Remaining games to analyse: 52735
+2025-03-05 18:38:58,626- INFO - Starting ELO update for 5 games.
+2025-03-05 18:38:58,626- INFO - START: (2331176, datetime.date(2014, 5, 17)) - END: (2331180, datetime.date(2014, 5, 17))
+2025-03-05 18:38:59,833- INFO - Processing game 2331176 on date 2014-05-17
+2025-03-05 18:38:59,848- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:38:59,861- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:38:59,885- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:39:01,517- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:45:24,241- INFO - Remaining games to analyse: 52734
+2025-03-05 18:45:24,266- INFO - Starting ELO update for 5 games.
+2025-03-05 18:45:24,266- INFO - START: (2331177, datetime.date(2014, 5, 17)) - END: (2331181, datetime.date(2014, 5, 17))
+2025-03-05 18:45:25,537- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:45:25,553- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:45:25,560- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:45:25,563- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:45:27,015- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:46:13,798- INFO - Remaining games to analyse: 52734
+2025-03-05 18:46:13,823- INFO - Starting ELO update for 5 games.
+2025-03-05 18:46:13,824- INFO - START: (2331177, datetime.date(2014, 5, 17)) - END: (2331181, datetime.date(2014, 5, 17))
+2025-03-05 18:46:15,050- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:46:15,050- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:46:15,112- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:46:15,161- INFO - Processing game 2331177 on date 2014-05-17
+2025-03-05 18:46:16,279- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:46:16,672- INFO - UPDATE: Updating 2331177 on 2014-05-17.
+2025-03-05 18:46:16,678- INFO - UPDATE COMPLETE: Updated 2331177 on 2014-05-17.
+2025-03-05 18:46:16,678- INFO - UPDATE: Updating 2331178 on 2014-05-17.
+2025-03-05 18:53:21,422- INFO - Remaining games to analyse: 52733
+2025-03-05 18:53:21,443- INFO - Starting ELO update for 5 games.
+2025-03-05 18:53:21,444- INFO - START: (2331178, datetime.date(2014, 5, 17)) - END: (2331182, datetime.date(2014, 5, 17))
+2025-03-05 18:53:22,689- INFO - Processing game 2331178 on date 2014-05-17
+2025-03-05 18:53:22,705- INFO - Processing game 2331179 on date 2014-05-17
+2025-03-05 18:53:22,735- INFO - Processing game 2331180 on date 2014-05-17
+2025-03-05 18:53:22,754- INFO - Processing game 2331181 on date 2014-05-17
+2025-03-05 18:53:24,166- INFO - Processing game 2331182 on date 2014-05-17
+2025-03-05 18:53:24,595- INFO - UPDATE: Updating 2331178 on 2014-05-17.
+2025-03-05 18:53:24,599- INFO - UPDATE COMPLETE: Updated 2331178 on 2014-05-17.
+2025-03-05 18:53:24,599- INFO - UPDATE: Updating 2331179 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE COMPLETE: Updated 2331179 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE: Updating 2331180 on 2014-05-17.
+2025-03-05 18:53:24,601- INFO - UPDATE COMPLETE: Updated 2331180 on 2014-05-17.
+2025-03-05 18:53:24,602- INFO - UPDATE: Updating 2331181 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE COMPLETE: Updated 2331181 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE: Updating 2331182 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - UPDATE COMPLETE: Updated 2331182 on 2014-05-17.
+2025-03-05 18:53:24,603- INFO - Batch completed. Processed 5 games.
+2025-03-05 18:53:24,644- INFO - Flushing 168 player ELO updates to the database.

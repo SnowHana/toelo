@@ -98,7 +98,7 @@ class EloUpdater:
             ),
             {"game_date": last_game_date, "game_id": last_game_id},
         )
-        self.conn.commit()
+        # self.conn.commit()
 
     def fetch_games_to_process(self):
         """
@@ -178,7 +178,7 @@ class EloUpdater:
             with global_engine.connect() as conn:
                 logger.info(f"Processing game {game_id} on date {game_date}")
 
-                game_analysis = GameAnalysis(conn, game_id=game_id)
+                game_analysis = GameAnalysis(global_engine, game_id=game_id)
 
                 # Club analysis
                 home_club_analysis = ClubAnalysis(
@@ -252,8 +252,12 @@ class EloUpdater:
                 for result in results:
                     if result:
                         game_id, game_date, player_elo_updates = result
+                        logger.info(f"UPDATE: Updating {game_id} on {game_date}.")
                         all_player_elo_updates.extend(player_elo_updates)
                         self._update_progress(game_date, game_id)
+                        logger.info(
+                            f"UPDATE COMPLETE: Updated {game_id} on {game_date}."
+                        )
                         self.games_processed += 1
 
                         if len(all_player_elo_updates) >= self.PLAYER_BATCH_LIMIT:
@@ -294,7 +298,6 @@ class EloUpdater:
                     for update in all_player_elo_updates
                 ],
             )
-            self.conn.commit()
         except Exception as e:
             logger.error(f"Error flushing player ELO updates: {e}", exc_info=True)
 
