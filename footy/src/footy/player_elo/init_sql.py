@@ -5,6 +5,7 @@ from footy.player_elo.database_connection import DATA_DIR, DATABASE_CONFIG
 
 # Make sure your environment uses psycopg 3, e.g. 'psycopg==3.1.8'
 # and your SQLAlchemy URL is 'postgresql+psycopg://...' not 'psycopg2'
+from footy.player_elo.game_validator import validate_games
 from sqlalchemy import (
     create_engine,
     Column,
@@ -403,6 +404,9 @@ def init_sql_db():
 
     # Create process_progress table
     create_process_table(engine)
+
+    # Lastly...validate games
+    validate_games()
 
 
 if __name__ == "__main__":

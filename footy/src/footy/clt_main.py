@@ -42,7 +42,7 @@ def reset_players_elo():
 def run_analysis():
     try:
         print("\nRunning analysis...")
-        update_elo()
+        update_elo(process_game_num=5)
         print("Analysis completed successfully!\n")
     except subprocess.CalledProcessError as e:
         print(f"Error during analysis: {e}\n")

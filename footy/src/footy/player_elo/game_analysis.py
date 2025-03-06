@@ -2,9 +2,7 @@ import json
 from datetime import datetime
 from typing import Dict, List, Tuple
 
-from psycopg import sql
-
-from footy.player_elo.database_connection import DatabaseConnection, DATABASE_CONFIG
+from sqlalchemy import text
 
 # Typing
 ClubGoals = Dict[int, List[int]]
@@ -21,11 +19,11 @@ class GameAnalysis:
     FULL_GAME_MINUTES = 90
     DEFAULT_ELO = 1500
 
-    def __init__(self, cur, game_id: int):
+    def __init__(self, conn, game_id: int):
         """
         Initialize the GameAnalysis instance for a specific game
 
-        @param cur: Database cursor for executing SQL queries.
+        @param cur: Database connsor for executing SQL queries.
         @param game_id: ID of the game being analyzed.
         @raise ValueError: If no home/away clubs are found for the game.
         """
@@ -36,7 +34,7 @@ class GameAnalysis:
         self._date = None
         self._season = None
 
-        self.cur = cur
+        self.conn = conn
         self.game_id = game_id
 
         # Fetch all game-related data in bulk
@@ -62,15 +60,16 @@ class GameAnalysis:
         @raise ValueError: If no valid game is found for the given game_id.
         @raise ValueError: If no valid game is found for the given game_id
         """
-        self.cur.execute(
-            """
+        result = self.conn.execute(
+            text(
+                """
             SELECT g.home_club_id, g.away_club_id, g.date
             FROM valid_games g
-            WHERE g.game_id = %s
-        """,
-            (self.game_id,),
-        )
-        result = self.cur.fetchone()
+            WHERE g.game_id = :game_id;
+        """
+            ),
+            {"game_id": self.game_id},
+        ).fetchone()
 
         # Error: No club found for game id.
         if not result:
@@ -93,26 +92,29 @@ class GameAnalysis:
         self._players_play_times = {}
 
         # Fetch starting players
-        self.cur.execute(
-            """
+        players_playtimes_data = self.conn.execute(
+            text(
+                """
             SELECT player_club_id AS club_id, player_id, minutes_played
             FROM appearances
-            WHERE game_id = %s
-        """,
-            (self.game_id,),
-        )
-        players_playtimes_data = self.cur.fetchall()
+            WHERE game_id = :game_id
+        """
+            ),
+            {"game_id": self.game_id},
+        ).fetchall()
+        # players_playtimes_data = self.cur.fetchall()
 
         # Fetch substituted players
-        self.cur.execute(
-            """
+        substitutions_data = self.conn.execute(
+            text(
+                """
             SELECT club_id, player_id, player_in_id, minute
             FROM game_events
-            WHERE type = 'Substitutions' AND game_id = %s
-        """,
-            (self.game_id,),
-        )
-        substitutions_data = self.cur.fetchall()
+            WHERE type = 'Substitutions' AND game_id = :game_id
+        """
+            ),
+            {"game_id": self.game_id},
+        ).fetchall()
 
         # Process starting players
         for club_id, player_id, minutes_played in players_playtimes_data:
@@ -155,23 +157,25 @@ class GameAnalysis:
         # Init.
         self._goals_per_club = {self.home_club_id: [], self.away_club_id: []}
 
-        self.cur.execute(
-            """
+        goals_data = self.conn.execute(
+            text(
+                """
             SELECT club_id, minute
             FROM game_events
-            WHERE type = 'Goals' AND game_id = %s
-        """,
-            (self.game_id,),
-        )
-        goals_data = self.cur.fetchall()
+            WHERE type = 'Goals' AND game_id = :game_id
+        """
+            ),
+            {"game_id": self.game_id},
+        ).fetchall()
 
         for club_id, minute in goals_data:
             self._goals_per_club.setdefault(club_id, []).append(minute)
 
     def _fetch_player_elos(self):
         """
-        Fetch ELO ratings for all players involved in the game.
-        For players with no existing ELO, estimate their ELO based on teammates or use the default ELO.
+        Fetch ELO ratings for ALL players involved in the game.
+        For players with no existing ELO,
+        estimate their ELO based on teammates or use the default ELO.
 
         @return: None
         """
@@ -180,15 +184,27 @@ class GameAnalysis:
             return
 
         # Fetch ELOs in bulk
-        query = sql.SQL(
-            """
-            SELECT player_id, elo FROM players_elo
-            WHERE player_id IN ({ids}) AND season = %s
-        """
-        ).format(ids=sql.SQL(", ").join(sql.Placeholder() * len(self.players_list)))
-        self.cur.execute(query, (*self.players_list, self.season))
-        elos_data = self.cur.fetchall()
-        elos_dict = dict(elos_data)
+        # query = sql.SQL(
+        #     """
+        #     SELECT player_id, elo FROM players_elo
+        #     WHERE player_id IN ({ids}) AND season = %s
+        # """
+        # ).format(ids=sql.SQL(", ").join(sql.Placeholder() * len(self.players_list)))
+        # self.cur.execute(query, (*self.players_list, self.season))
+
+        elos_dict = dict(
+            self.conn.execute(
+                text(
+                    """SELECT player_id, elo FROM players_elo
+                WHERE player_id = ANY(:players_list) AND season = :season;
+                """
+                ),
+                {"players_list": self.players_list, "season": self.season},
+            ).fetchall()
+        )
+
+        # elos_data = self.cur.fetchall()
+        # elos_dict = dict(elos_data)
 
         # Process ELOs
         self._elos = {}
@@ -418,10 +434,10 @@ class GameAnalysis:
         print(f"Summary saved to {filename}")
 
 
-if __name__ == "__main__":
-    with DatabaseConnection(DATABASE_CONFIG) as conn:
-        with conn.cursor() as cur:
-            # Initialize game-level analysis
-            # game_analysis = GameAnalysis(cur, game_id=2331123)
-            game_analysis = GameAnalysis(cur, game_id=2287203)
-            game_analysis.print_summary()
+# if __name__ == "__main__":
+#     with DatabaseConnection(DATABASE_CONFIG) as conn:
+#         with .cursor() as cur:
+#             # Initialize game-level analysis
+#             # game_analysis = GameAnalysis(cur, game_id=2331123)
+#             game_analysis = GameAnalysis(cur, game_id=2287203)
+#             game_analysis.print_summary()

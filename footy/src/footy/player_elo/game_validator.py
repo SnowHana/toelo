@@ -1,4 +1,4 @@
-from footy.player_elo.database_connection import DatabaseConnection
+from footy.player_elo.database_connection import get_engine
 
 
 class GameValidator:
@@ -113,9 +113,7 @@ class GameValidator:
 
 def validate_games():
 
-    from footy.player_elo.database_connection import DATABASE_CONFIG
-
-    with DatabaseConnection(DATABASE_CONFIG) as conn:
+    with get_engine().begin as conn:
         validator = GameValidator(conn)
         validator.add_valid_games()
 
