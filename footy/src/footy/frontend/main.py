@@ -1,10 +1,11 @@
 from os import environ
 from footy.player_elo.init_sql import init_sql_db
-from footy.player_elo.elo_updater import update_elo
+from footy.player_elo.elo_updater import get_progress, update_elo
 from footy.player_elo.reset_players_elo import reset_init_players_elo_db
 from footy.player_elo.database_connection import get_engine
 import numpy as np
 import pandas as pd
+from sqlalchemy import text
 import streamlit as st
 
 import logging
@@ -82,7 +83,7 @@ def display_data():
         # Get Engine
         engine = get_engine()
         # query = """SELECT * FROM players_elo WHERE elo is not null ORDER BY elo DESC;"""
-        query = """SELECT * FROM players_elo;"""
+        query = """SELECT name, country_of_birth, date_of_birth, elo, season FROM players_elo WHERE elo is not null ORDER BY elo DESC;"""
         # NOTE: Ordering will be disabled if we call the raw dataframe because it is too big!
         df = pd.read_sql_query(query, con=engine)
         # st.dataframe(
@@ -91,20 +92,34 @@ def display_data():
         # )
         # st.data_editor(df)
         st.dataframe(df.head(100))
-
-        # TESTING
-        df = pd.DataFrame(
-            np.random.randn(10, 20), columns=("col %d" % i for i in range(20))
-        )
-
-        st.dataframe(df)
         st.success("Analysed data displayed!")
     except Exception as e:
         st.error(f"Display data failed: {e}")
 
 
+def analysis_progress():
+    """Show percentage of analysis done..."""
+    res = get_progress()
+    remain = res[0]
+    total = res[1]
+
+    # (remaining, total) = get_progress()
+    progress = round((1 - remain / total) * 100)
+    # st.write(progress)
+    st.write(f"Total {total} games to analyse.")
+    st.write(f"Analysed {total - remain} games.")
+    st.write(f"{remain} games waiting to be analysed.")
+    my_bar = st.progress(
+        progress,
+        text=f"So far analysed {progress}% of games!",
+    )
+
+
 def main():
     st.title("Football ELO")
+
+    analysis_progress()
+
     choice = st.radio(
         "Select a function you wanna use",
         ["Reset DB", "Reset ELO", "Run Analysis", "Display Data"],

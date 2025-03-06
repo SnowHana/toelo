@@ -178,7 +178,7 @@ class EloUpdater:
             with global_engine.connect() as conn:
                 logger.info(f"Processing game {game_id} on date {game_date}")
 
-                game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                game_analysis = GameAnalysis(conn=conn, game_id=game_id)
 
                 # Club analysis
                 home_club_analysis = ClubAnalysis(
@@ -321,6 +321,52 @@ def update_elo(process_game_num: int):
     except ValueError as e:
         logger.error(f"Invalid input: {e}. Exiting...")
         sys.exit(1)
+
+
+def get_progress():
+    """Get Progress
+
+    Returns:
+        [remaining, total_game]
+    """
+    engine = get_engine()
+    with engine.connect() as conn:
+        # Get max
+        max_game = conn.execute(
+            text("""SELECT COUNT(*) FROM valid_games;""")
+        ).fetchone()[0]
+
+        # Rem.
+        remaining = 0
+        elo_updater = EloUpdater(conn)
+
+        last_processed_date, last_processed_game_id = (
+            elo_updater._get_last_processed_game()
+        )
+
+        if last_processed_date:
+            # Count and log remaining games to process
+            count_result = conn.execute(
+                text(
+                    """
+                    SELECT COUNT(*) FROM valid_games
+                    WHERE (date::DATE >  :last_date OR (date::DATE = :last_date AND game_id > :last_game_id));
+                    """
+                ),
+                {
+                    "last_date": last_processed_date,
+                    "last_game_id": last_processed_game_id,
+                },
+            ).fetchone()
+            remaining = count_result[0]
+        else:
+            count_result = conn.execute(
+                text("SELECT COUNT(*) FROM valid_games;")
+            ).fetchone()
+            remaining = count_result[0]
+
+        # return (int(remaining), int(max_game))
+        return [remaining, max_game]
 
 
 # Main execution
