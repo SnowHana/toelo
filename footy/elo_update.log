@@ -779,3 +779,1473 @@ HINT:  No operator matches the given name and argument types. You might need to 
 [parameters: {'players_list': [126716, 126719, 13217, 258374, 32522, 42373, 4277, 50143, 5404, 56067, 57162, 59561, 65331, 89718, 32522, 258374, 126716, 127457, 15715, 175446, 18006, 21297, 255653, 276111, 45912, 51545, 60890, 65237, 70934, 75238, 89726, 276111, 18006, 51545], 'season': 2014}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-03-05 18:08:19,502- INFO - Batch completed. Processed 10 games.
+2025-03-06 20:20:50,159- INFO - Processing game 2329459 on date 2014-05-18
+2025-03-06 20:20:50,162- INFO - Processing game 2346384 on date 2014-05-17
+2025-03-06 20:20:50,167- INFO - Processing game 2331183 on date 2014-05-17
+2025-03-06 20:20:50,169- INFO - Processing game 2341259 on date 2014-05-18
+2025-03-06 20:20:51,197- INFO - Processing game 2329460 on date 2014-05-18
+2025-03-06 20:20:51,197- INFO - Processing game 2346387 on date 2014-05-17
+2025-03-06 20:20:51,203- INFO - Processing game 2331184 on date 2014-05-17
+2025-03-06 20:20:51,559- INFO - Processing game 2341260 on date 2014-05-18
+2025-03-06 20:20:51,851- INFO - Processing game 2329461 on date 2014-05-18
+2025-03-06 20:20:51,851- INFO - Processing game 2341247 on date 2014-05-17
+2025-03-06 20:20:51,859- INFO - Processing game 2359582 on date 2014-05-17
+2025-03-06 20:20:52,547- INFO - Processing game 2341258 on date 2014-05-17
+2025-03-06 20:20:52,551- INFO - Processing game 2453203 on date 2014-05-17
+2025-03-06 20:20:52,559- INFO - Processing game 2329462 on date 2014-05-18
+2025-03-06 20:20:52,831- INFO - Processing game 2341273 on date 2014-05-18
+2025-03-06 20:20:53,274- INFO - Processing game 2453204 on date 2014-05-17
+2025-03-06 20:20:53,275- INFO - Processing game 2341265 on date 2014-05-17
+2025-03-06 20:20:53,657- INFO - Processing game 2341283 on date 2014-05-18
+2025-03-06 20:20:53,836- INFO - Processing game 2329469 on date 2014-05-18
+2025-03-06 20:20:54,032- INFO - Processing game 2453761 on date 2014-05-17
+2025-03-06 20:20:54,046- INFO - Processing game 2346380 on date 2014-05-17
+2025-03-06 20:20:54,549- INFO - Processing game 2346383 on date 2014-05-18
+2025-03-06 20:20:54,640- INFO - Processing game 2341253 on date 2014-05-18
+2025-03-06 20:20:54,755- INFO - Processing game 2346382 on date 2014-05-17
+2025-03-06 20:20:54,964- INFO - Processing game 2329449 on date 2014-05-18
+2025-03-06 20:20:55,323- INFO - Processing game 2341254 on date 2014-05-18
+2025-03-06 20:20:55,525- INFO - Processing game 2359575 on date 2014-05-18
+2025-03-06 20:20:55,635- INFO - Processing game 2346385 on date 2014-05-18
+2025-03-06 20:20:55,662- INFO - Processing game 2359583 on date 2014-05-18
+2025-03-06 20:20:56,009- INFO - Processing game 2456475 on date 2014-05-24
+2025-03-06 20:20:56,344- INFO - Processing game 2346386 on date 2014-05-18
+2025-03-06 20:20:56,467- INFO - Processing game 2359576 on date 2014-05-18
+2025-03-06 20:20:56,563- INFO - Processing game 2359584 on date 2014-05-18
+2025-03-06 20:20:56,721- INFO - Processing game 2460589 on date 2014-07-01
+2025-03-06 20:20:57,194- INFO - Processing game 2359577 on date 2014-05-18
+2025-03-06 20:20:57,319- INFO - Processing game 2460520 on date 2014-07-03
+2025-03-06 20:20:57,470- INFO - Processing game 2460503 on date 2014-07-03
+2025-03-06 20:20:57,534- INFO - Processing game 2453108 on date 2014-05-18
+2025-03-06 20:20:57,924- INFO - Processing game 2359578 on date 2014-05-18
+2025-03-06 20:20:58,225- INFO - Processing game 2460507 on date 2014-07-03
+2025-03-06 20:20:58,303- INFO - Processing game 2460523 on date 2014-07-03
+2025-03-06 20:20:58,458- INFO - Processing game 2453110 on date 2014-05-18
+2025-03-06 20:20:58,655- INFO - Processing game 2359579 on date 2014-05-18
+2025-03-06 20:20:59,111- INFO - Processing game 2460508 on date 2014-07-03
+2025-03-06 20:20:59,288- INFO - Processing game 2460532 on date 2014-07-03
+2025-03-06 20:20:59,301- INFO - Processing game 2453111 on date 2014-05-18
+2025-03-06 20:20:59,468- INFO - Processing game 2359580 on date 2014-05-18
+2025-03-06 20:21:00,042- INFO - Processing game 2460592 on date 2014-07-08
+2025-03-06 20:21:00,061- INFO - Processing game 2460509 on date 2014-07-03
+2025-03-06 20:21:00,247- INFO - Processing game 2359581 on date 2014-05-18
+2025-03-06 20:21:00,578- INFO - Processing game 2453113 on date 2014-05-18
+2025-03-06 20:21:00,848- INFO - Processing game 3376111 on date 2014-07-08
+2025-03-06 20:21:00,967- INFO - Processing game 2460547 on date 2014-07-10
+2025-03-06 20:21:01,085- INFO - Processing game 2460511 on date 2014-07-03
+2025-03-06 20:21:01,431- INFO - Processing game 2453114 on date 2014-05-18
+2025-03-06 20:21:01,740- INFO - Processing game 2460541 on date 2014-07-10
+2025-03-06 20:21:01,909- INFO - Processing game 2460607 on date 2014-07-15
+2025-03-06 20:21:01,972- INFO - Processing game 2460549 on date 2014-07-10
+2025-03-06 20:21:02,099- INFO - Processing game 2460606 on date 2014-07-16
+2025-03-06 20:21:02,679- INFO - Processing game 2460608 on date 2014-07-15
+2025-03-06 20:21:02,680- INFO - Processing game 2460546 on date 2014-07-10
+2025-03-06 20:21:02,884- INFO - Processing game 2460611 on date 2014-07-16
+2025-03-06 20:21:03,116- INFO - Processing game 2460559 on date 2014-07-10
+2025-03-06 20:21:03,511- INFO - Processing game 2460618 on date 2014-07-15
+2025-03-06 20:21:03,630- INFO - Processing game 2469188 on date 2014-07-17
+2025-03-06 20:21:03,900- INFO - Processing game 2460562 on date 2014-07-10
+2025-03-06 20:21:04,050- INFO - Processing game 2460577 on date 2014-07-17
+2025-03-06 20:21:04,334- INFO - Processing game 2465477 on date 2014-07-15
+2025-03-06 20:21:04,427- INFO - Processing game 2469189 on date 2014-07-17
+2025-03-06 20:21:04,834- INFO - Processing game 2460578 on date 2014-07-17
+2025-03-06 20:21:05,106- INFO - Processing game 2465492 on date 2014-07-15
+2025-03-06 20:21:05,218- INFO - Processing game 2469190 on date 2014-07-17
+2025-03-06 20:21:05,395- INFO - Processing game 2460572 on date 2014-07-10
+2025-03-06 20:21:05,597- INFO - Processing game 2460579 on date 2014-07-17
+2025-03-06 20:21:05,972- INFO - Processing game 2460600 on date 2014-07-16
+2025-03-06 20:21:06,168- INFO - Processing game 2460545 on date 2014-07-11
+2025-03-06 20:21:06,185- INFO - Processing game 2469193 on date 2014-07-17
+2025-03-06 20:21:06,446- INFO - Processing game 2460580 on date 2014-07-17
+2025-03-06 20:21:06,944- INFO - Processing game 2460603 on date 2014-07-16
+2025-03-06 20:21:06,947- INFO - Processing game 2469197 on date 2014-07-17
+2025-03-06 20:21:07,079- INFO - Processing game 2460598 on date 2014-07-15
+2025-03-06 20:21:07,489- INFO - Processing game 2467446 on date 2014-07-17
+2025-03-06 20:21:07,644- INFO - Processing game 2469208 on date 2014-07-17
+2025-03-06 20:21:07,830- INFO - Processing game 2469215 on date 2014-07-17
+2025-03-06 20:21:08,050- INFO - Processing game 2469198 on date 2014-07-17
+2025-03-06 20:21:08,429- INFO - Processing game 2469209 on date 2014-07-17
+2025-03-06 20:21:08,432- INFO - Processing game 2639088 on date 2014-07-20
+2025-03-06 20:21:08,577- INFO - Processing game 2469216 on date 2014-07-17
+2025-03-06 20:21:09,058- INFO - Processing game 2469206 on date 2014-07-17
+2025-03-06 20:21:09,175- INFO - Processing game 2469416 on date 2014-07-21
+2025-03-06 20:21:09,206- INFO - Processing game 2469210 on date 2014-07-17
+2025-03-06 20:21:09,760- INFO - Processing game 2469411 on date 2014-07-18
+2025-03-06 20:21:10,114- INFO - Processing game 2469211 on date 2014-07-17
+2025-03-06 20:21:10,347- INFO - Processing game 2469412 on date 2014-07-19
+2025-03-06 20:21:10,649- INFO - Processing game 2469212 on date 2014-07-17
+2025-03-06 20:21:10,819- INFO - Processing game 2469413 on date 2014-07-20
+2025-03-06 20:21:11,024- INFO - Processing game 2469213 on date 2014-07-17
+2025-03-06 20:21:40,823- ERROR - Error processing game 2469413: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:21:40,836- INFO - Processing game 2469414 on date 2014-07-20
+2025-03-06 20:21:41,026- ERROR - Error processing game 2469213: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:21:41,030- INFO - Processing game 2469214 on date 2014-07-17
+2025-03-06 20:22:10,841- ERROR - Error processing game 2469414: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:22:10,849- INFO - Processing game 2469415 on date 2014-07-20
+2025-03-06 20:22:11,035- ERROR - Error processing game 2469214: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:22:40,850- ERROR - Error processing game 2469415: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:22:41,689- INFO - Processing game 2458528 on date 2014-07-22
+2025-03-06 20:22:41,689- INFO - Processing game 2460613 on date 2014-07-23
+2025-03-06 20:22:41,689- INFO - Processing game 2460585 on date 2014-07-24
+2025-03-06 20:22:41,690- INFO - Processing game 2473643 on date 2014-07-24
+2025-03-06 20:22:42,225- INFO - Processing game 2460616 on date 2014-07-23
+2025-03-06 20:22:42,234- INFO - Processing game 2460604 on date 2014-07-22
+2025-03-06 20:22:42,639- INFO - Processing game 2460620 on date 2014-07-23
+2025-03-06 20:22:42,645- INFO - Processing game 2460612 on date 2014-07-22
+2025-03-06 20:22:42,920- INFO - Processing game 2460622 on date 2014-07-22
+2025-03-06 20:22:43,195- INFO - Processing game 2460623 on date 2014-07-22
+2025-03-06 20:22:43,505- INFO - Processing game 2465493 on date 2014-07-22
+2025-03-06 20:23:11,690- ERROR - Error processing game 2460585: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:11,691- INFO - Processing game 2460586 on date 2014-07-24
+2025-03-06 20:23:11,692- ERROR - Error processing game 2473643: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:11,693- INFO - Processing game 2473645 on date 2014-07-24
+2025-03-06 20:23:12,643- ERROR - Error processing game 2460620: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:12,658- INFO - Processing game 2460621 on date 2014-07-23
+2025-03-06 20:23:13,506- ERROR - Error processing game 2465493: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:13,509- INFO - Processing game 2473637 on date 2014-07-22
+2025-03-06 20:23:41,702- ERROR - Error processing game 2473645: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:41,702- ERROR - Error processing game 2460586: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:41,710- INFO - Processing game 2473648 on date 2014-07-24
+2025-03-06 20:23:41,710- INFO - Processing game 2460587 on date 2014-07-24
+2025-03-06 20:23:42,671- ERROR - Error processing game 2460621: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:42,673- INFO - Processing game 2460625 on date 2014-07-23
+2025-03-06 20:23:43,518- ERROR - Error processing game 2473637: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:23:43,520- INFO - Processing game 2473671 on date 2014-07-24
+2025-03-06 20:24:11,714- ERROR - Error processing game 2473648: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:11,714- ERROR - Error processing game 2460587: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:11,716- INFO - Processing game 2473659 on date 2014-07-24
+2025-03-06 20:24:11,716- INFO - Processing game 2467448 on date 2014-07-24
+2025-03-06 20:24:12,679- ERROR - Error processing game 2460625: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:12,681- INFO - Processing game 2460581 on date 2014-07-24
+2025-03-06 20:24:13,527- ERROR - Error processing game 2473671: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:13,530- INFO - Processing game 2473672 on date 2014-07-24
+2025-03-06 20:24:41,720- ERROR - Error processing game 2467448: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:41,720- ERROR - Error processing game 2473659: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:41,722- INFO - Processing game 2473661 on date 2014-07-24
+2025-03-06 20:24:41,722- INFO - Processing game 2467449 on date 2014-07-24
+2025-03-06 20:24:42,683- ERROR - Error processing game 2460581: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:42,685- INFO - Processing game 2460584 on date 2014-07-24
+2025-03-06 20:24:43,533- ERROR - Error processing game 2473672: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:24:43,535- INFO - Processing game 2473673 on date 2014-07-24
+2025-03-06 20:25:11,725- ERROR - Error processing game 2467449: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:11,725- ERROR - Error processing game 2473661: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:11,728- INFO - Processing game 2473664 on date 2014-07-24
+2025-03-06 20:25:11,728- INFO - Processing game 2470374 on date 2014-07-24
+2025-03-06 20:25:12,686- ERROR - Error processing game 2460584: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:12,688- INFO - Processing game 2479513 on date 2014-07-25
+2025-03-06 20:25:13,536- ERROR - Error processing game 2473673: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:13,538- INFO - Processing game 2477176 on date 2014-07-24
+2025-03-06 20:25:41,733- ERROR - Error processing game 2473664: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:41,734- ERROR - Error processing game 2470374: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:41,740- INFO - Processing game 2473639 on date 2014-07-24
+2025-03-06 20:25:41,741- INFO - Processing game 2473666 on date 2014-07-24
+2025-03-06 20:25:42,692- ERROR - Error processing game 2479513: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:42,694- INFO - Processing game 2469418 on date 2014-07-26
+2025-03-06 20:25:43,540- ERROR - Error processing game 2477176: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:25:43,542- INFO - Processing game 2469417 on date 2014-07-25
+2025-03-06 20:26:11,743- ERROR - Error processing game 2473639: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:11,745- INFO - Processing game 2470812 on date 2014-07-26
+2025-03-06 20:26:11,746- ERROR - Error processing game 2473666: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:11,747- INFO - Processing game 2469872 on date 2014-07-27
+2025-03-06 20:26:12,695- ERROR - Error processing game 2469418: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:12,696- INFO - Processing game 2469419 on date 2014-07-26
+2025-03-06 20:26:13,545- ERROR - Error processing game 2469417: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:13,547- INFO - Processing game 2469866 on date 2014-07-25
+2025-03-06 20:26:41,746- ERROR - Error processing game 2470812: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:41,748- INFO - Processing game 2477177 on date 2014-07-26
+2025-03-06 20:26:41,748- ERROR - Error processing game 2469872: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:41,750- INFO - Processing game 2469873 on date 2014-07-27
+2025-03-06 20:26:42,705- ERROR - Error processing game 2469419: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:42,708- INFO - Processing game 2469867 on date 2014-07-26
+2025-03-06 20:26:43,555- ERROR - Error processing game 2469866: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:26:43,556- INFO - Processing game 2479511 on date 2014-07-25
+2025-03-06 20:27:11,749- ERROR - Error processing game 2477177: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:11,753- INFO - Processing game 2477178 on date 2014-07-26
+2025-03-06 20:27:11,752- ERROR - Error processing game 2469873: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:11,754- INFO - Processing game 2477179 on date 2014-07-27
+2025-03-06 20:27:12,713- ERROR - Error processing game 2469867: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:12,714- INFO - Processing game 2469868 on date 2014-07-26
+2025-03-06 20:27:13,561- ERROR - Error processing game 2479511: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:13,564- INFO - Processing game 2478421 on date 2014-07-29
+2025-03-06 20:27:41,759- ERROR - Error processing game 2477178: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:41,760- ERROR - Error processing game 2477179: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:41,768- INFO - Processing game 2479507 on date 2014-07-26
+2025-03-06 20:27:41,768- INFO - Processing game 2477180 on date 2014-07-27
+2025-03-06 20:27:42,719- ERROR - Error processing game 2469868: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:42,725- INFO - Processing game 2469869 on date 2014-07-26
+2025-03-06 20:27:43,571- ERROR - Error processing game 2478421: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+Traceback (most recent call last):
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/elo_updater.py", line 181, in process_game
+    game_analysis = GameAnalysis(global_engine, game_id=game_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/footy/src/footy/player_elo/game_analysis.py", line 43, in __init__
+    self.conn = engine.connect()
+                ^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3278, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3302, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/Users/nautilus/projects/footy/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 168, in _do_get
+    raise exc.TimeoutError(
+sqlalchemy.exc.TimeoutError: QueuePool limit of size 5 overflow 10 reached, connection timed out, timeout 30.00 (Background on this error at: https://sqlalche.me/e/20/3o7r)
+2025-03-06 20:27:43,574- INFO - Processing game 2478423 on date 2014-07-29
+2025-03-06 20:28:06,523- INFO - Processing game 2478426 on date 2014-07-30
+2025-03-06 20:28:06,523- INFO - Processing game 2478434 on date 2014-07-30
+2025-03-06 20:28:06,524- INFO - Processing game 2479052 on date 2014-07-31
+2025-03-06 20:28:06,523- INFO - Processing game 2479044 on date 2014-07-31
+2025-03-06 20:28:07,897- INFO - Processing game 2479045 on date 2014-07-31
+2025-03-06 20:28:07,900- INFO - Processing game 2479054 on date 2014-07-31
+2025-03-06 20:28:07,903- INFO - Processing game 2478427 on date 2014-07-30
+2025-03-06 20:28:08,635- INFO - Processing game 2479053 on date 2014-07-30
+2025-03-06 20:28:08,820- INFO - Processing game 2479055 on date 2014-07-31
+2025-03-06 20:28:08,943- INFO - Processing game 2479047 on date 2014-07-31
+2025-03-06 20:28:09,069- INFO - Processing game 2478428 on date 2014-07-30
+2025-03-06 20:28:09,877- INFO - Processing game 2479056 on date 2014-07-31
+2025-03-06 20:28:09,882- INFO - Processing game 2479048 on date 2014-07-31
+2025-03-06 20:28:10,018- INFO - Processing game 2478429 on date 2014-07-30
