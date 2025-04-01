@@ -14,3 +14,17 @@ https://drive.google.com/drive/folders/1x_R1GlTMJKeo9CTACmffRorAjfjSmxy8?usp=dri
 
 and place it to
 ~/toelo/footy/src/data
+
+## Setting up postgresql
+
+```python
+DATABASE_CONFIG = {
+"dbname": "football",
+"user": "postgres",
+"password": "1234",
+"host": "localhost",
+"port": "5432",
+}
+```
+
+You have to create a user and database accordingly...

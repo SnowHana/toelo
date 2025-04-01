@@ -113,7 +113,7 @@ class GameValidator:
 
 def validate_games():
 
-    with get_engine().begin as conn:
+    with get_engine().begin() as conn:
         validator = GameValidator(conn)
         validator.add_valid_games()
 
