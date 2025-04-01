@@ -176,7 +176,7 @@ class EloUpdater:
             # engine = get_engine(db_config)
             # with DatabaseConnection(db_config) as conn:
             with global_engine.connect() as conn:
-                logger.info(f"Processing game {game_id} on date {game_date}")
+                # logger.info(f"Processing game {game_id} on date {game_date}")
 
                 game_analysis = GameAnalysis(conn=conn, game_id=game_id)
 
@@ -252,12 +252,12 @@ class EloUpdater:
                 for result in results:
                     if result:
                         game_id, game_date, player_elo_updates = result
-                        logger.info(f"UPDATE: Updating {game_id} on {game_date}.")
+                        # logger.info(f"UPDATE: Updating {game_id} on {game_date}.")
                         all_player_elo_updates.extend(player_elo_updates)
                         self._update_progress(game_date, game_id)
-                        logger.info(
-                            f"UPDATE COMPLETE: Updated {game_id} on {game_date}."
-                        )
+                        # logger.info(
+                        #     f"UPDATE COMPLETE: Updated {game_id} on {game_date}."
+                        # )
                         self.games_processed += 1
 
                         if len(all_player_elo_updates) >= self.PLAYER_BATCH_LIMIT:
