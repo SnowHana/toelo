@@ -1,5 +1,5 @@
 from toelo.player_elo.database_connection import get_engine
-from sqlalchemy import text
+from sqlalchemy import String, text
 
 
 class GameValidator:
@@ -28,7 +28,7 @@ class GameValidator:
         If not, create it based on the structure of the `games` table.
         """
         # with self.conn.cursor() as cur:
-        with self.engine.connect() as conn:
+        with self.engine.begin() as conn:
             try:
                 conn.execute(
                     text(
@@ -78,29 +78,30 @@ class GameValidator:
         Args:
             game_ids (list): List of game IDs to validate and insert.
         """
-
+        # return
         with self.engine.begin() as conn:
             try:
                 # with self.conn.cursor() as cur:
+
                 conn.execute(
                     text(
                         """
-                    WITH valid_games_batch AS (
-                        SELECT g.*
-                        FROM games g
-                        WHERE g.game_id = ANY(:game_ids)
-                            AND EXISTS (
-                                SELECT 1
-                                FROM appearances a
-                                WHERE a.game_id = g.game_id
-                            )
-                    )
-                    INSERT INTO valid_games
-                    SELECT * FROM valid_games_batch
-                    ON CONFLICT (game_id) DO NOTHING;
-                    """
+                        WITH valid_games_batch AS (
+                            SELECT g.*
+                            FROM games g
+                            WHERE g.game_id = ANY(:x)
+                                AND EXISTS (
+                                    SELECT 1
+                                    FROM appearances a
+                                    WHERE a.game_id = g.game_id
+                                )
+                        )
+                        INSERT INTO valid_games
+                        SELECT * FROM valid_games_batch
+                        ON CONFLICT (game_id) DO NOTHING;
+                        """
                     ),
-                    (game_ids,),
+                    {"x": game_ids},
                 )
 
                 print(f"Validated and inserted batch of {len(game_ids)} games.")
