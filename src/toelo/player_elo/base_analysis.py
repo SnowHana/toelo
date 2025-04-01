@@ -2,7 +2,7 @@
 from abc import abstractmethod
 from typing import Dict
 
-from footy.player_elo.game_analysis import GameAnalysis
+from toelo.player_elo.game_analysis import GameAnalysis
 
 
 class BaseAnalysis:

@@ -1,7 +1,7 @@
 import logging
 
-from footy.player_elo.base_analysis import BaseAnalysis
-from footy.player_elo.game_analysis import GameAnalysis
+from toelo.player_elo.base_analysis import BaseAnalysis
+from toelo.player_elo.game_analysis import GameAnalysis
 
 
 class PlayerAnalysis(BaseAnalysis):

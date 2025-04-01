@@ -1,4 +1,4 @@
-from footy.player_elo.database_connection import (
+from toelo.player_elo.database_connection import (
     DATABASE_CONFIG,
     get_engine,
 )

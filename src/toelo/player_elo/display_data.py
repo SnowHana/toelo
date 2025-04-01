@@ -1,7 +1,7 @@
 # footy/src/footy/database.py
 import psycopg
 import pandas as pd
-from footy.player_elo.database_connection import (
+from toelo.player_elo.database_connection import (
     DATABASE_CONFIG,
     get_engine,
 )

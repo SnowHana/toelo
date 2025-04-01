@@ -4,7 +4,7 @@ from typing import Dict
 import psycopg
 from sqlalchemy import create_engine
 
-DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
 
 DATABASE_CONFIG = {
@@ -47,3 +47,5 @@ def get_engine(config: Dict[str, str] = DATABASE_CONFIG):
 #     def __exit__(self, exc_type, exc_val, exc_tb):
 #         if self.conn:
 #             self.conn.close()
+if __name__ == "__main__":
+    print(DATA_DIR)

@@ -5,10 +5,10 @@ import sys
 from multiprocessing import Pool
 from pathlib import Path
 
-from footy.player_elo.club_analysis import ClubAnalysis
-from footy.player_elo.database_connection import DATABASE_CONFIG, get_engine
-from footy.player_elo.game_analysis import GameAnalysis
-from footy.player_elo.player_analysis import PlayerAnalysis
+from toelo.player_elo.club_analysis import ClubAnalysis
+from toelo.player_elo.database_connection import DATABASE_CONFIG, get_engine
+from toelo.player_elo.game_analysis import GameAnalysis
+from toelo.player_elo.player_analysis import PlayerAnalysis
 from sqlalchemy import text
 
 # Add the src directory to sys.path

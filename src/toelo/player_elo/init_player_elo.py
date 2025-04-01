@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from footy.player_elo.database_connection import DATA_DIR
+from toelo.player_elo.database_connection import DATA_DIR
 
 BASE_ELO = 1500
 ELO_RANGE = 300
