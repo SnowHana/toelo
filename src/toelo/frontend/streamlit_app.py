@@ -1,19 +1,19 @@
-from footy.player_elo.display_data import get_player_data
+from toelo.player_elo.display_data import get_player_data
 import streamlit as st
 import logging
 import io
 
-from footy.player_elo.game_validator import validate_games
-from footy.player_elo.reset_players_elo import reset_init_players_elo_db
-from footy.player_elo.init_sql import init_sql_db
-from footy.player_elo.elo_updater import update_elo
+from toelo.player_elo.game_validator import validate_games
+from toelo.player_elo.reset_players_elo import reset_init_players_elo_db
+from toelo.player_elo.init_sql import init_sql_db
+from toelo.player_elo.elo_updater import update_elo
 
 
 def reset_db():
     """Recreate the entire SQL DB from scratch."""
     try:
         init_sql_db()
-        validate_games()
+        # validate_games()
         st.success("Database reset successfully!")
     except ValueError as e:
         st.error(f"Error during database reset: {e}")

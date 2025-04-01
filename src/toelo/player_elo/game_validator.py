@@ -1,4 +1,5 @@
 from toelo.player_elo.database_connection import get_engine
+from sqlalchemy import text
 
 
 class GameValidator:
@@ -11,14 +12,14 @@ class GameValidator:
 
     BATCH_SIZE = 10000  # Adjust batch size based on performance
 
-    def __init__(self, conn):
+    def __init__(self, engine):
         """
         Initialize the GameValidator class.
 
         Args:
-            conn: Database connection object for creating cursors. SQLalchemy engine
+            engine: Database connection object for creating cursors. SQLalchemy engine
         """
-        self.conn = conn
+        self.engine = engine
         self._ensure_valid_games_table_exists()
 
     def _ensure_valid_games_table_exists(self):
@@ -26,10 +27,12 @@ class GameValidator:
         Ensure the `valid_games` table exists in the database.
         If not, create it based on the structure of the `games` table.
         """
-        try:
-            # with self.conn.cursor() as cur:
-            self.conn.execute(
-                """
+        # with self.conn.cursor() as cur:
+        with self.engine.connect() as conn:
+            try:
+                conn.execute(
+                    text(
+                        """
                 DO $$
                 BEGIN
                     IF NOT EXISTS (
@@ -44,12 +47,11 @@ class GameValidator:
                 END
                 $$;
             """
-            )
-            self.conn.commit()
-            print("Ensured `valid_games` table exists.")
-        except Exception as e:
-            print(f"Error occured while ensuring 'valid_games' table exists: {e}")
-            self.conn.rollback()
+                    )
+                )
+                print("Ensured `valid_games` table exists.")
+            except Exception as e:
+                print(f"Error occured while ensuring 'valid_games' table exists: {e}")
 
     def _fetch_game_ids_batch(self):
         """
@@ -58,13 +60,16 @@ class GameValidator:
         Yields:
             list: A batch of game IDs.
         """
-        # with self.conn.cursor() as cur:
-        self.conn.execute("SELECT game_id FROM games ORDER BY game_id;")
-        while True:
-            batch = self.conn.fetchmany(self.BATCH_SIZE)
-            if not batch:
-                break
-            yield [row[0] for row in batch]
+        with self.engine.connect() as conn:
+            res = conn.execute(text("SELECT game_id FROM games ORDER BY game_id;"))
+            all_rows = res.fetchall()
+            # while True:
+            #     batch = res.fetchmany(self.BATCH_SIZE)
+            #     if not batch:
+            #         break
+            #     yield [row[0] for row in batch]
+        for i in range(0, len(all_rows), self.BATCH_SIZE):
+            yield [row[0] for row in all_rows[i : i + self.BATCH_SIZE]]
 
     def _validate_and_insert_games(self, game_ids):
         """
@@ -73,31 +78,34 @@ class GameValidator:
         Args:
             game_ids (list): List of game IDs to validate and insert.
         """
-        try:
-            # with self.conn.cursor() as cur:
-            self.conn.execute(
-                """
-                WITH valid_games_batch AS (
-                    SELECT g.*
-                    FROM games g
-                    WHERE g.game_id = ANY(%s)
-                        AND EXISTS (
-                            SELECT 1
-                            FROM appearances a
-                            WHERE a.game_id = g.game_id
-                        )
+
+        with self.engine.begin() as conn:
+            try:
+                # with self.conn.cursor() as cur:
+                conn.execute(
+                    text(
+                        """
+                    WITH valid_games_batch AS (
+                        SELECT g.*
+                        FROM games g
+                        WHERE g.game_id = ANY(:game_ids)
+                            AND EXISTS (
+                                SELECT 1
+                                FROM appearances a
+                                WHERE a.game_id = g.game_id
+                            )
+                    )
+                    INSERT INTO valid_games
+                    SELECT * FROM valid_games_batch
+                    ON CONFLICT (game_id) DO NOTHING;
+                    """
+                    ),
+                    (game_ids,),
                 )
-                INSERT INTO valid_games
-                SELECT * FROM valid_games_batch
-                ON CONFLICT (game_id) DO NOTHING;
-            """,
-                (game_ids,),
-            )
-            self.conn.commit()
-            print(f"Validated and inserted batch of {len(game_ids)} games.")
-        except Exception as e:
-            print(f"Error validating / inserting games: {e}")
-            self.conn.rollback()
+
+                print(f"Validated and inserted batch of {len(game_ids)} games.")
+            except Exception as e:
+                print(f"Error validating / inserting games: {e}")
 
     def add_valid_games(self):
         """
@@ -112,10 +120,10 @@ class GameValidator:
 
 
 def validate_games():
-
-    with get_engine().begin() as conn:
-        validator = GameValidator(conn)
-        validator.add_valid_games()
+    # with get_engine() as engine:
+    engine = get_engine()
+    validator = GameValidator(engine=engine)
+    validator.add_valid_games()
 
 
 # Usage
