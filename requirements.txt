@@ -27,7 +27,7 @@ Django==4.2.16
 executing==2.1.0
 fastjsonschema==2.20.0
 fonttools==4.54.1
--e git+ssh://git@github.com/SnowHana/toelo.git@c495064638d95e1e0163a20352a34974b3b389a1#egg=footy&subdirectory=footy
+-e git+ssh://git@github.com/SnowHana/toelo.git@5f74ca75f5fd36f39bd5e78f38f0e0eedd2cf151#egg=footy&subdirectory=footy
 fqdn==1.5.1
 gitdb==4.0.12
 GitPython==3.1.44
@@ -116,7 +116,7 @@ soupsieve==2.6
 SQLAlchemy==2.0.36
 sqlparse==0.5.1
 stack-data==0.6.3
-streamlit==1.42.2
+streamlit==1.43.0
 tenacity==9.0.0
 terminado==0.18.1
 tinycss2==1.3.0
