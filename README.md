@@ -88,6 +88,18 @@ Use the same PostgreSQL version or a compatible one on both machines to avoid re
 
 ### Setting up postgresql
 
+```bash
+# Drop the existing database
+dropdb -U postgres football
+
+# Create a fresh new database
+createdb football
+
+# Import your database.sql into this database
+psql -U postgres football < database.sql
+
+```
+
 ```python
 DATABASE_CONFIG = {
 "dbname": "football",

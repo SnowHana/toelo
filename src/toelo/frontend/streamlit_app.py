@@ -1,4 +1,4 @@
-from toelo.player_elo.display_data import get_player_data
+from toelo.player_elo.display_data import get_player_data, plot_top_elo_players
 import streamlit as st
 import logging
 import io
@@ -56,7 +56,9 @@ def update_players_elo(process_game_num: int):
 
 def display_player_data():
     st.title("Player Data")
-    query = "SELECT * FROM players_elo LIMIT 1000;"
+    st.plotly_chart(plot_top_elo_players())
+
+    query = "SELECT * FROM players_elo LIMIT 200;"
     data = get_player_data(query)
     st.dataframe(data)
 
