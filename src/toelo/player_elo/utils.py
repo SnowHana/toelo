@@ -50,12 +50,15 @@ def add_season_column(df: pd.DataFrame) -> pd.DataFrame:
     """
     # Clean up player valuations
     df_copy = df.copy()
-    df_copy['date'] = pd.to_datetime(df_copy['date'])
-    if 'season' not in df_copy.columns:
+    df_copy["date"] = pd.to_datetime(df_copy["date"])
+    if "season" not in df_copy.columns:
         # df_copy['month_year'] = df_copy['date'].apply(lambda x: f"08 {x.year}" if x >= pd.Timestamp(x.year, 7, 1)\
         #     else f"08 {x.year-1}")
-        df_copy['season'] = df_copy['date'].apply(lambda x: f"{x.year}" if x >= pd.Timestamp(x.year, 7, 1) \
-            else f"{x.year - 1}")
+        df_copy["season"] = df_copy["date"].apply(
+            lambda x: (
+                f"{x.year}" if x >= pd.Timestamp(x.year, 7, 1) else f"{x.year - 1}"
+            )
+        )
     # df_copy = df_copy.loc[df_copy.groupby(['season'])['date'].idxmin()] #Get value only at start of season
     return df_copy
 
@@ -82,3 +85,6 @@ def sort_df_by_date(df: pd.DataFrame) -> pd.DataFrame:
     df = df.sort_values(by=["date"])
 
     return df
+
+
+# print(multiprocessing.cpu_count() - 1 or 1)

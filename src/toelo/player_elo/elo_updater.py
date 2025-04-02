@@ -1,6 +1,7 @@
 import logging
 import logging.config
 from logging.handlers import RotatingFileHandler
+import multiprocessing
 import sys
 from multiprocessing import Pool
 from pathlib import Path
@@ -13,10 +14,9 @@ from sqlalchemy import text
 
 # Add the src directory to sys.path
 BASE_DIR = Path(__file__).resolve().parent.parent
-DEFAULT_PROCESS_NUM = 4
 sys.path.append(str(BASE_DIR))
 
-# ==== Logging ====
+# ===================== Logging =====================
 log_file = "elo_update.log"
 logging.basicConfig(
     level=logging.INFO,
@@ -30,6 +30,15 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 global_engine = None
+
+# ===================== CONSTANTS =====================
+# Change accordingly...
+# Number of games processed per batch
+GAME_BATCH_SIZE = 1000
+# Maximum player ELO updates before flushing
+PLAYER_BATCH_LIMIT = 1000
+# How many processes you want to handle at once...depends on your computer spec?
+DEFAULT_PROCESS_NUM = 4
 
 
 def init_worker_process(db_config=DATABASE_CONFIG):
@@ -45,8 +54,7 @@ def init_worker_process(db_config=DATABASE_CONFIG):
 class EloUpdater:
     """Class for updating ELOs based on game data."""
 
-    BATCH_SIZE = 100  # Number of games processed per batch
-    PLAYER_BATCH_LIMIT = 1000  # Maximum player ELO updates before flushing
+    # TODO: Consider using engine instead of conn for EloUpdater because it is safer...
 
     def __init__(self, conn, max_games_to_process=1000):
         """Initialise EloUpdater Class
@@ -141,10 +149,14 @@ class EloUpdater:
                 },
             ).fetchall()
         else:
+            # Fresh start from the very first game
+            # Fetch remaining games to analyse and log
             count_result = self.conn.execute(
                 text("SELECT COUNT(*) FROM valid_games;")
             ).fetchone()
             logger.info(f"Remaining games to analyse: {count_result[0]}")
+
+            # Fetch Games to process... (Default 1000, )
             result = self.conn.execute(
                 text(
                     """
@@ -168,13 +180,15 @@ class EloUpdater:
         @param db_config: Database Config
         @return: Tuple (game_id, game_date, player_elo_updates) or None if there's an error
         """
+        # Use Global Engine so that we don't have to create engine for every game / every batch
+        # Increase performance...
         global global_engine
         game_id, game_date = game
+
+        # List of individual player ELO updates, later be used when we bulk-update player elo updates
         player_elo_updates = []
         try:
             # Each process opens its own database connection
-            # engine = get_engine(db_config)
-            # with DatabaseConnection(db_config) as conn:
             with global_engine.connect() as conn:
                 # logger.info(f"Processing game {game_id} on date {game_date}")
 
@@ -192,7 +206,7 @@ class EloUpdater:
                 new_home_club_elo = home_club_analysis.new_elo()
                 new_away_club_elo = away_club_analysis.new_elo()
 
-                # Update players' ELO
+                # Analyse and Update each players' ELO in games
                 for player_id in game_analysis.players_list:
                     # Case where player_id is null
                     # Log and skip.
@@ -232,17 +246,19 @@ class EloUpdater:
         all_player_elo_updates = []
         # Split len(games_to_process) to BATCH_SIZEd lists
         batches = [
-            games_to_process[i : i + self.BATCH_SIZE]
-            for i in range(0, len(games_to_process), self.BATCH_SIZE)
+            games_to_process[i : i + GAME_BATCH_SIZE]
+            for i in range(0, len(games_to_process), GAME_BATCH_SIZE)
         ]
 
         # Create a pool that initializes each worker with the shared engine.
         with Pool(
-            processes=DEFAULT_PROCESS_NUM,
+            # processes=DEFAULT_PROCESS_NUM,
+            processes=multiprocessing.cpu_count() - 1 or 1,
             initializer=init_worker_process,
             initargs=(db_config,),
         ) as pool:
             for batch in batches:
+                # Terminate when we have processed
                 if self.games_processed >= self.MAX_GAMES_TO_PROCESS:
                     logger.info(f"Processed {self.games_processed} games. Exiting...")
                     return
@@ -260,7 +276,8 @@ class EloUpdater:
                         # )
                         self.games_processed += 1
 
-                        if len(all_player_elo_updates) >= self.PLAYER_BATCH_LIMIT:
+                        if len(all_player_elo_updates) >= PLAYER_BATCH_LIMIT:
+                            # Update player elo updates
                             self._flush_player_elo_updates(all_player_elo_updates)
                             all_player_elo_updates = []
 
@@ -281,7 +298,6 @@ class EloUpdater:
 
         global global_engine
         try:
-            # with DatabaseConnection(DATABASE_CONFIG) as conn::
             # Insert/Update players_elo table
             # Conflict: Update
             self.conn.execute(
@@ -331,12 +347,12 @@ def get_progress():
     """
     engine = get_engine()
     with engine.connect() as conn:
-        # Get max
+        # Get max games...
         max_game = conn.execute(
             text("""SELECT COUNT(*) FROM valid_games;""")
         ).fetchone()[0]
 
-        # Rem.
+        # Remaining
         remaining = 0
         elo_updater = EloUpdater(conn)
 
