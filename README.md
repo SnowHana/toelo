@@ -67,6 +67,18 @@ sudo mv /tmp/football.sql .
 
 ```
 
+And zip it
+
+```bash
+gzip > football.sql.gz
+```
+
+Unzip
+
+```bash
+gunzip -c football.sql.gz | psql -U postgres -d football
+```
+
 Make sure to
 🔒 Don’t Forget:
 
