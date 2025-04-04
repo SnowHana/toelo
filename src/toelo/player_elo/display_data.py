@@ -31,7 +31,20 @@ def get_player_names(player_name_q: str):
 
 def get_indiv_player_elo_data(player_name: str) -> pd.DataFrame:
     engine = get_engine()
-    query = "SELECT * FROM players_elo WHERE "
+    with engine.connect() as conn:
+        res = conn.execute(
+            text("""SELECT * FROM players_elo WHERE name LIKE :x"""), {"x": player_name}
+        ).fetchall()
+
+    df = pd.DataFrame(res)
+    # df.columns = res.keys()
+    df.dropna(subset=["elo"], inplace=True)
+    sort_by_elo = df.sort_values("elo", ascending=True)
+    sort_by_elo["season"].astype("Int64")
+    sort_by_elo["name_season"] = (
+        sort_by_elo["name"] + " - " + sort_by_elo["season"].astype(str)
+    )
+    return sort_by_elo
 
 
 def plot_top_elo_players():

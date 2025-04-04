@@ -1,5 +1,6 @@
 import streamlit as st
 from toelo.player_elo.display_data import (
+    get_indiv_player_elo_data,
     get_player_data,
     get_player_names,
     plot_top_elo_players,
@@ -29,6 +30,12 @@ def display_player_elo():
         player_name = st.selectbox("Select a player name: ", player_name_choices)
         st.write("You chose ", player_name, "!")
         # Now get data of that player
+        data = get_indiv_player_elo_data(player_name)
+        st.line_chart(
+            data=data,
+            x="season",
+            y="elo",
+        )
 
     else:
         st.write("Click the button to see something special.")
