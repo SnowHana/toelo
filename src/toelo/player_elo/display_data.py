@@ -1,6 +1,7 @@
 # footy/src/footy/database.py
 import psycopg
 import pandas as pd
+from sqlalchemy import text
 from toelo.player_elo.database_connection import (
     DATABASE_CONFIG,
     get_engine,
@@ -13,6 +14,37 @@ def get_player_data(query: str) -> pd.DataFrame:
     engine = get_engine()
     df = pd.read_sql_query(query, engine)
     return df
+
+
+def get_player_names(player_name_q: str):
+    pattern = f"%{player_name_q}%"
+    engine = get_engine()
+
+    with engine.connect() as conn:
+        res = conn.execute(
+            text("SELECT name FROM players WHERE name ILIKE :x"),
+            {"x": pattern},
+        ).fetchall()
+
+    return [row[0] for row in res]
+
+
+def get_indiv_player_elo_data(player_name: str) -> pd.DataFrame:
+    engine = get_engine()
+    with engine.connect() as conn:
+        res = conn.execute(
+            text("""SELECT * FROM players_elo WHERE name LIKE :x"""), {"x": player_name}
+        ).fetchall()
+
+    df = pd.DataFrame(res)
+    # df.columns = res.keys()
+    df.dropna(subset=["elo"], inplace=True)
+    sort_by_elo = df.sort_values("elo", ascending=True)
+    sort_by_elo["season"].astype("Int64")
+    sort_by_elo["name_season"] = (
+        sort_by_elo["name"] + " - " + sort_by_elo["season"].astype(str)
+    )
+    return sort_by_elo
 
 
 def plot_top_elo_players():

@@ -1,4 +1,10 @@
-from toelo.player_elo.display_data import get_player_data, plot_top_elo_players
+import numpy as np
+import pandas as pd
+from toelo.player_elo.display_data import (
+    get_player_data,
+    plot_top_elo_players,
+    get_player_names,
+)
 import streamlit as st
 import logging
 import io
@@ -63,13 +69,51 @@ def display_player_data():
     st.dataframe(data)
 
 
+def display_player_elo():
+    st.title("Individual Players' ELO")
+
+    # Text input with a key so we can track it
+    player_name_q = st.text_input(
+        "Enter the player name you want to search:", key="player_name"
+    )
+
+    st.write("Player name ", player_name_q)
+
+    # # Confirm button
+    # if st.button("Confirm"):
+    #     st.session_state["confirmed_name"] = st.session_state["player_name"]
+
+    # # Show result if confirmed
+    # if "confirmed_name" in st.session_state:
+    #     st.write("Current name is:", st.session_state["confirmed_name"])
+    # Search database to get candidates of player_names
+    # player_name_choices = get_player_names(player_name_q)
+    # st.write(player_name_choices)
+    # st.write("SUCCESS")
+    # chart_data = pd.DataFrame(
+    #     {
+    #         "col1": np.random.randn(20),
+    #         "col2": np.random.randn(20),
+    #         "col3": np.random.choice(["A", "B", "C"], 20),
+    #     }
+    # )
+
+    # st.line_chart(chart_data, x="col1", y="col2", color="col3")
+
+
 def main():
     st.title("Football Player ELO Analyse")
 
     # Radio to pick which operation
     choice = st.radio(
         "Choose an action",
-        ("Reset Database", "Reset Players ELO", "Run Analysis", "Display Data"),
+        (
+            "Reset Database",
+            "Reset Players ELO",
+            "Run Analysis",
+            "Display Data",
+            "Display Player ELO",
+        ),
     )
 
     # ========== RESET DB ==========
@@ -99,6 +143,10 @@ def main():
         st.write("Display Data.")
         if st.button("Confirm: Display Data"):
             display_player_data()
+    elif choice == "Display Player ELO":
+        st.write("Display Individual Player ELO")
+        if st.button("Confirm: Display Individual Player ELO Data"):
+            display_player_elo()
 
 
 if __name__ == "__main__":
