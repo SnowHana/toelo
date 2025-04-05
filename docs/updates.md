@@ -1,3 +1,14 @@
+---
+title: Documentation - To-Do, Enhancements, Explanations...
+---
+
+# To-Do
+
+1. Youth player initialising and $k$ values for them to have bigger changes.
+2. Extra scaling for players with _big influences_ like goals, assists.
+
+---
+
 # Enhancements needed
 
 1. ELO Scaling
