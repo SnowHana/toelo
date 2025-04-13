@@ -16,3 +16,4 @@ Temporary Items
 venv
 footy/src/data/
 data/
+.DS_Store
