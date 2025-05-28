@@ -1,5 +1,8 @@
 import streamlit as st
-from toelo.player_elo.display_data import get_player_data, plot_top_elo_players
+from toelo.frontend.streamlit_app.display_data import (
+    get_player_data,
+    plot_top_elo_players,
+)
 
 
 def display_player_data():

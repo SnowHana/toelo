@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from toelo.player_elo.display_data import (
+from toelo.frontend.streamlit_app.display_data import (
     get_player_data,
     plot_top_elo_players,
     get_player_names,

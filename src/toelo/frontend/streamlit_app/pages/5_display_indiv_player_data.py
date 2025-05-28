@@ -2,7 +2,7 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-from toelo.player_elo.display_data import (
+from toelo.frontend.streamlit_app.display_data import (
     get_indiv_player_elo_data,
     get_player_data,
     get_player_names,
