@@ -148,6 +148,7 @@ python-dotenv = "^1.1.0"
 gpt4all = "^2.8.2"
 langchain = "^0.3.25"
 langchain-community = "^0.3.24"
+langgraph = "^0.4.7"
 
 
 [build-system]

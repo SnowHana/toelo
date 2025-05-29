@@ -111,3 +111,15 @@ DATABASE_CONFIG = {
 ```
 
 You have to create a user and database accordingly...
+
+---
+
+# Updates
+
+## Chat Bot
+
+Initally tried to use OpenAI's API to simply send the request.
+No longer works cuz they charge you for everything.
+Using GPT4All locally and
+LangChain
+https://python.langchain.com/docs/tutorials/sql_qa/
