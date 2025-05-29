@@ -145,6 +145,9 @@ wheel = "0.45.1"
 widgetsnbextension = "4.0.13"
 openai = "^1.82.0"
 python-dotenv = "^1.1.0"
+gpt4all = "^2.8.2"
+langchain = "^0.3.25"
+langchain-community = "^0.3.24"
 
 
 [build-system]
