@@ -143,6 +143,8 @@ webencodings = "0.5.1"
 websocket-client = "1.8.0"
 wheel = "0.45.1"
 widgetsnbextension = "4.0.13"
+openai = "^1.82.0"
+python-dotenv = "^1.1.0"
 
 
 [build-system]

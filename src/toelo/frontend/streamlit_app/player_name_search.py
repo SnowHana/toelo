@@ -29,47 +29,6 @@ def get_player_name_q():
     return player_name_q
 
 
-def draw_line_graphs(df_list: list[pd.DataFrame], ELO_OFFSET: int = 300) -> alt.Chart:
-    """Draw a line graph of players ELO by season
-
-    Args:
-        df_list (list[pd.DataFrame]): _description_
-        ELO_OFFSET (int, optional): _description_. Defaults to 300.
-
-    Returns:
-        alt.Chart: _description_
-    """
-    ELO_OFFSET = 300
-
-    df = pd.concat(df_list)
-    df.dropna(subset=["elo"], inplace=True)
-    df = df.sort_values(by=["name", "season"], ascending=True)
-    # sort_by_elo = df.sort_values('elo', ascending=True)
-    # sort_by_elo['name_season'] = sort_by_elo['name'] + " - " + sort_by_elo['season'].astype(str)
-
-    df["season"] = pd.to_datetime(df.season, format="%Y")
-    chart_df = df[["season", "elo", "name"]]
-
-    season_boundary = [min(chart_df["season"]), max(chart_df["season"])]
-    elo_boundary = [
-        min(chart_df["elo"]) - ELO_OFFSET,
-        max(chart_df["elo"]) + ELO_OFFSET,
-    ]
-
-    chart = (
-        alt.Chart(chart_df)
-        .mark_line(point=True)
-        .encode(
-            x=alt.X("season:T", title="Season"),
-            y=alt.Y("elo:Q", title="ELO", scale=alt.Scale(domain=elo_boundary)),
-            # color=alt.value("blue"),  # Single color since only one player
-            color="name:N",
-            tooltip=["season:T", "elo:Q", "name:N"],
-        )
-    ).interactive()
-    return chart
-
-
 def get_exact_player_name(player_name_q: str):
 
     # if st.session_state.search_player_button_clicked:
