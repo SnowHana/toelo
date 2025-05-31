@@ -46,13 +46,13 @@ class ChatBot:
         db_uri = get_connection_string(DATABASE_CONFIG)
         self.db = SQLDatabase.from_uri(db_uri)
 
-        self.init_llm()
-        self.init_query_prompt_template()
-        self.init_graph()
+        self._init_llm()
+        self._init_query_prompt_template()
+        self._init_graph()
 
         # Init llm
 
-    def init_llm(self):
+    def _init_llm(self):
         if not os.environ.get("GOOGLE_API_KEY"):
             os.environ["GOOGLE_API_KEY"] = getpass.getpass(
                 "Enter API key for Google Gemini: "
@@ -60,7 +60,7 @@ class ChatBot:
 
         self.llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
 
-    def init_query_prompt_template(self):
+    def _init_query_prompt_template(self):
         system_message = """
         Given an input question, create a syntactically correct {dialect} query to
         run to help find the answer. Unless the user specifies in his question a
@@ -85,7 +85,7 @@ class ChatBot:
             [("system", system_message), ("user", user_prompt)]
         )
 
-    def write_query(self, state: State):
+    def _write_query(self, state: State):
         """Generate SQL query to fetch info
 
         Args:
@@ -104,7 +104,7 @@ class ChatBot:
         result = structured_llm.invoke(prompt)
         return {"query": result["query"]}
 
-    def execute_query(self, state: State):
+    def _execute_query(self, state: State):
         """Exectues SQL query
 
         Args:
@@ -114,7 +114,7 @@ class ChatBot:
         execute_query_tool = QuerySQLDataBaseTool(db=self.db)
         return {"result": execute_query_tool.invoke(state["query"])}
 
-    def generate_answer(self, state: State):
+    def _generate_answer(self, state: State):
         """Answer question using retrieved info as context
 
         Args:
@@ -130,10 +130,10 @@ class ChatBot:
         response = self.llm.invoke(prompt)
         return {"answer": response.content}
 
-    def init_graph(self):
+    def _init_graph(self):
         memory = MemorySaver()
         graph_builder = StateGraph(State).add_sequence(
-            [self.write_query, self.execute_query, self.generate_answer]
+            [self._write_query, self._execute_query, self._generate_answer]
         )
         graph_builder.add_edge(START, "write_query")
         self.graph = graph_builder.compile(
@@ -144,6 +144,12 @@ class ChatBot:
         }
 
     def run_graph(self, question: str):
+        """Main mehtod to run through our steps of generating and executing a SQL query
+        to get a result.
+
+        Args:
+            question (str): _description_
+        """
         for step in self.graph.stream(
             {"question": question},
             self.graph_config,
