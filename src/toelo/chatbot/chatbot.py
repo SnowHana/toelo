@@ -135,9 +135,9 @@ class ChatBot:
         graph_builder = StateGraph(State).add_sequence(
             [self._write_query, self._execute_query, self._generate_answer]
         )
-        graph_builder.add_edge(START, "write_query")
+        graph_builder.add_edge(START, "_write_query")
         self.graph = graph_builder.compile(
-            checkpointer=memory, interrupt_before=["execute_query"]
+            checkpointer=memory, interrupt_before=["_execute_query"]
         )
         self.graph_config: dict[str, dict[str, int]] = {
             "configurable": {"thread_id": 1}
@@ -173,4 +173,4 @@ class ChatBot:
 
 
 c = ChatBot()
-print(c.run_graph("Player with not-null, highest player elo?"))
+# print(c.run_graph("Player with not-null, highest player elo?"))
