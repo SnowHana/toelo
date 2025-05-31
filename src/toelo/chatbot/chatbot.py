@@ -35,7 +35,7 @@ class State(TypedDict):
     answer: str
 
 
-class ChatBot:
+class BaseChatBot:
     def __init__(self):
         load_dotenv()
         if not os.environ.get("LANGSMITH_API_KEY"):
@@ -47,6 +47,29 @@ class ChatBot:
         self.db = SQLDatabase.from_uri(db_uri)
 
         self._init_llm()
+
+    def _init_llm(self):
+        if not os.environ.get("GOOGLE_API_KEY"):
+            os.environ["GOOGLE_API_KEY"] = getpass.getpass(
+                "Enter API key for Google Gemini: "
+            )
+
+        self.llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
+
+
+class ChatBot(BaseChatBot):
+    def __init__(self):
+        # load_dotenv()
+        # if not os.environ.get("LANGSMITH_API_KEY"):
+        #     os.environ["LANGSMITH_API_KEY"] = getpass()
+        #     os.environ["LANGSMITH_API_KEY"] = "true"
+
+        # # Init db
+        # db_uri = get_connection_string(DATABASE_CONFIG)
+        # self.db = SQLDatabase.from_uri(db_uri)
+
+        # self._init_llm()
+        super().__init__()
         self._init_query_prompt_template()
         self._init_graph()
 
@@ -87,6 +110,8 @@ class ChatBot:
 
     def _write_query(self, state: State):
         """Generate SQL query to fetch info
+
+        Change top_k to get different number of results.
 
         Args:
             state (State): _description_

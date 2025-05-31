@@ -3,10 +3,10 @@ from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 
 
-from toelo.chatbot.chatbot import ChatBot
+from toelo.chatbot.chatbot import BaseChatBot
 
 
-class AgentChatBot(ChatBot):
+class AgentChatBot(BaseChatBot):
     def __init__(self):
         super().__init__()
         toolkit = SQLDatabaseToolkit(db=self.db, llm=self.llm)
@@ -65,13 +65,29 @@ class AgentChatBot(ChatBot):
         )
 
     def ask_question(self, question: str):
+        res = []
         for step in self.agent_executor.stream(
-            {"messages": [{"role": "user", "content": question}]},
-            stream_mode="values",
+            {"messages": [{"role": "user", "content": question}]}, stream_mode="values"
         ):
-            step["messages"][-1].pretty_print()
+            messages = step["messages"][-1].pretty_repr()
+            res.append(messages)
+        return res
+
+        # print(result)
+
+        # res = []
+        # for step in result:
+        #     res.append(step["messages"][-1].pretty_print())
+        # # for step in self.agent_executor.stream(
+        # #     {"messages": [{"role": "user", "content": question}]},
+        # #     stream_mode="values",
+        # # ):
+        # # step["messages"][-1].pretty_print()
+        # print(res)
+        # return res
 
 
-c = ChatBot()
 a = AgentChatBot()
-a.ask_question("Which country has the highest average player elo?")
+a.ask_question(
+    "Which country has the highest average player elo where country has at least 20 players?"
+)
