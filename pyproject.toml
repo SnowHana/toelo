@@ -146,7 +146,7 @@ widgetsnbextension = "4.0.13"
 openai = "^1.82.0"
 python-dotenv = "^1.1.0"
 gpt4all = "^2.8.2"
-langchain = "^0.3.25"
+langchain = {extras = ["google-genai"], version = "^0.3.25"}
 langchain-community = "^0.3.24"
 langgraph = "^0.4.7"
 langchain-ollama = "^0.3.3"
