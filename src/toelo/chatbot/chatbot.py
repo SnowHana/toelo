@@ -9,7 +9,7 @@ from langchain.chat_models import init_chat_model
 from langchain_community.utilities import SQLDatabase
 from langchain_community.tools.sql_database.tool import QuerySQLDataBaseTool
 from langchain_core.prompts import ChatPromptTemplate
-
+from langchain_ollama.chat_models import ChatOllama
 
 from langgraph.graph import START, StateGraph
 
@@ -36,7 +36,7 @@ class State(TypedDict):
 
 
 class BaseChatBot:
-    def __init__(self):
+    def __init__(self, chatbot_name: str):
         load_dotenv()
         if not os.environ.get("LANGSMITH_API_KEY"):
             os.environ["LANGSMITH_API_KEY"] = getpass()
@@ -46,15 +46,25 @@ class BaseChatBot:
         db_uri = get_connection_string(DATABASE_CONFIG)
         self.db = SQLDatabase.from_uri(db_uri)
 
-        self._init_llm()
+        self._init_llm(chatbot_name)
 
-    def _init_llm(self):
+    def _init_llm(self, chatbot_name: str):
+        # choice = input("Enter models to choose: (gemini / codegemma)")
+        if chatbot_name == "gemini":
+            self._init_gemini_llm()
+        else:
+            self._init_olama_llm()
+
+    def _init_gemini_llm(self):
         if not os.environ.get("GOOGLE_API_KEY"):
             os.environ["GOOGLE_API_KEY"] = getpass.getpass(
                 "Enter API key for Google Gemini: "
             )
 
         self.llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
+
+    def _init_olama_llm(self):
+        self.llm = ChatOllama(model="codegemma:7b")
 
 
 class ChatBot(BaseChatBot):
@@ -75,7 +85,7 @@ class ChatBot(BaseChatBot):
 
         # Init llm
 
-    def _init_llm(self):
+    def _init_gemini_llm(self):
         if not os.environ.get("GOOGLE_API_KEY"):
             os.environ["GOOGLE_API_KEY"] = getpass.getpass(
                 "Enter API key for Google Gemini: "
