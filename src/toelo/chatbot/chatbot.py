@@ -36,6 +36,10 @@ class State(TypedDict):
 
 
 class BaseChatBot:
+    """Initialise connection to database and connections to llm models (both local and remote)
+    If you are using local LLM, make sure to correctly download models using ollama
+    """
+
     def __init__(self, chatbot_name: str):
         load_dotenv()
         if not os.environ.get("LANGSMITH_API_KEY"):
@@ -64,7 +68,8 @@ class BaseChatBot:
         self.llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
 
     def _init_olama_llm(self):
-        self.llm = ChatOllama(model="codegemma:7b")
+        # self.llm = ChatOllama(model="codegemma:7b")
+        self.llm = ChatOllama(model="llama3:8b")
 
 
 class ChatBot(BaseChatBot):
@@ -205,6 +210,3 @@ class ChatBot(BaseChatBot):
                 print(step)
         else:
             print("Operation Cancelled by user")
-
-
-# print(c.run_graph("Player with not-null, highest player elo?"))

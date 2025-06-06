@@ -7,6 +7,12 @@ from toelo.chatbot.chatbot import BaseChatBot
 
 
 class AgentChatBot(BaseChatBot):
+    """Use langsmith tools
+
+    Args:
+        BaseChatBot (_type_): _description_
+    """
+
     def __init__(self, chatbot_name: str):
         super().__init__(chatbot_name=chatbot_name)
         toolkit = SQLDatabaseToolkit(db=self.db, llm=self.llm)
