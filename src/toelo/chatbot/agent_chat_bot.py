@@ -7,8 +7,8 @@ from toelo.chatbot.chatbot import BaseChatBot
 
 
 class AgentChatBot(BaseChatBot):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, chatbot_name: str):
+        super().__init__(chatbot_name=chatbot_name)
         toolkit = SQLDatabaseToolkit(db=self.db, llm=self.llm)
         self.tools = toolkit.get_tools()
 
@@ -87,7 +87,7 @@ class AgentChatBot(BaseChatBot):
         # return res
 
 
-a = AgentChatBot()
-a.ask_question(
-    "Which country has the highest average player elo where country has at least 20 players?"
-)
+# a = AgentChatBot()
+# a.ask_question(
+#     "Which country has the highest average player elo where country has at least 20 players?"
+# )

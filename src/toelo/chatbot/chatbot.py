@@ -50,7 +50,7 @@ class BaseChatBot:
 
     def _init_llm(self, chatbot_name: str):
         # choice = input("Enter models to choose: (gemini / codegemma)")
-        if chatbot_name == "gemini":
+        if "gemini" in chatbot_name.lower():
             self._init_gemini_llm()
         else:
             self._init_olama_llm()
@@ -207,5 +207,4 @@ class ChatBot(BaseChatBot):
             print("Operation Cancelled by user")
 
 
-c = ChatBot()
 # print(c.run_graph("Player with not-null, highest player elo?"))

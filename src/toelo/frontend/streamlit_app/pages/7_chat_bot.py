@@ -6,7 +6,19 @@ def toggle_button(key: str, value: bool = True):
     st.session_state[key] = value
 
 
+def init_chatbot():
+    if "model_choice" not in st.session_state:
+        st.session_state.model_choice = st.selectbox(
+            "Which model do you wanna use?",
+            ("Google Gemini", "Codegemma"),
+        )
+
+        # Init model
+        st.session_state.agent = AgentChatBot(st.session_state.model_choice)
+
+
 def ask_chatbot():
+    # Ask question
     if not st.session_state.q:
         q = st.text_input("Ask a question!: ")
         st.button("Confirm question", on_click=toggle_button, args=("q", q))
@@ -27,7 +39,7 @@ st.sidebar.header("Ask AI")
 if "q" not in st.session_state:
     st.session_state.q = False
 
-if "agent" not in st.session_state:
-    st.session_state.agent = AgentChatBot()
-
+# if "agent" not in st.session_state:
+#     st.session_state.agent = AgentChatBot()
+init_chatbot()
 ask_chatbot()
