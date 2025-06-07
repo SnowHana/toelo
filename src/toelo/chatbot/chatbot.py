@@ -9,7 +9,7 @@ from langchain.chat_models import init_chat_model
 from langchain_community.utilities import SQLDatabase
 from langchain_community.tools.sql_database.tool import QuerySQLDataBaseTool
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_ollama.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 
 from langgraph.graph import START, StateGraph
 
