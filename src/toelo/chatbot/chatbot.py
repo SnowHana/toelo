@@ -40,7 +40,7 @@ class BaseChatBot:
     If you are using local LLM, make sure to correctly download models using ollama
     """
 
-    def __init__(self, chatbot_name: str):
+    def __init__(self, chatbot_choice: int):
         load_dotenv()
         if not os.environ.get("LANGSMITH_API_KEY"):
             os.environ["LANGSMITH_API_KEY"] = getpass()
@@ -50,11 +50,11 @@ class BaseChatBot:
         db_uri = get_connection_string(DATABASE_CONFIG)
         self.db = SQLDatabase.from_uri(db_uri)
 
-        self._init_llm(chatbot_name)
+        self._init_llm(chatbot_choice)
 
-    def _init_llm(self, chatbot_name: str):
+    def _init_llm(self, chatbot_choice: int):
         # choice = input("Enter models to choose: (gemini / codegemma)")
-        if "gemini" in chatbot_name.lower():
+        if chatbot_choice == 1:
             self._init_gemini_llm()
         else:
             self._init_olama_llm()
@@ -68,8 +68,10 @@ class BaseChatBot:
         self.llm = init_chat_model("gemini-2.0-flash", model_provider="google_genai")
 
     def _init_olama_llm(self):
+        print("Initialising with model : qwen2.5-coder:3b")
         # self.llm = ChatOllama(model="codegemma:7b")
-        self.llm = ChatOllama(model="llama3:8b")
+        # self.llm = ChatOllama(model="llama3:8b")
+        self.llm = ChatOllama(model="qwen2.5-coder:3b")
 
 
 class ChatBot(BaseChatBot):

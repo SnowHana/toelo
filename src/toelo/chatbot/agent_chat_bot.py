@@ -13,8 +13,8 @@ class AgentChatBot(BaseChatBot):
         BaseChatBot (_type_): _description_
     """
 
-    def __init__(self, chatbot_name: str):
-        super().__init__(chatbot_name=chatbot_name)
+    def __init__(self, chatbot_choice: int):
+        super().__init__(chatbot_choice=chatbot_choice)
         toolkit = SQLDatabaseToolkit(db=self.db, llm=self.llm)
         self.tools = toolkit.get_tools()
 
@@ -78,19 +78,6 @@ class AgentChatBot(BaseChatBot):
             messages = step["messages"][-1].pretty_repr()
             res.append(messages)
         return res
-
-        # print(result)
-
-        # res = []
-        # for step in result:
-        #     res.append(step["messages"][-1].pretty_print())
-        # # for step in self.agent_executor.stream(
-        # #     {"messages": [{"role": "user", "content": question}]},
-        # #     stream_mode="values",
-        # # ):
-        # # step["messages"][-1].pretty_print()
-        # print(res)
-        # return res
 
 
 # a = AgentChatBot()

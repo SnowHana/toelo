@@ -10,9 +10,11 @@ def init_chatbot():
     model_choice = st.session_state.get("model_choice", default=None)
     if not model_choice:
         # Init model choice
+        CHOICES = {1: "Google Gemini (Remote, Rate limit)", 2: "qwen3:8b (Local)"}
         choice = st.selectbox(
             "Which model do you wanna use?",
-            ("Google Gemini", "Codegemma"),
+            options=list(CHOICES.keys()),
+            format_func=lambda x: CHOICES[x],
             key="model_select_box",
         )
 
@@ -22,26 +24,9 @@ def init_chatbot():
             st.session_state.user_q = None
             st.session_state.response = None
 
-    # if "model_confirmed" not in st.session_state:
-    #     st.session_state.model_confirmed = False
-
-    # if not st.session_state.get("model_confirmed", default=False):
-    #     st.session_state.temp_model_choice = st.selectbox(
-    #         "Which model do you wanna use?",
-    #         ("Google Gemini", "Codegemma"),
-    #         key="model_choice",
-    #     )
-
-    #     if st.button("Confirm Model"):
-    #         st.session_state.model_choice = st.session_state.temp_model_choice
-    #         st.session_state.model_confirmed = True
-
-    #         st.write(st.session_state)
-    # Init model
-
 
 def ask_chatbot():
-    st.write(st.session_state)
+    # st.write(st.session_state)
     # Ask question
     if not st.session_state.get("user_q", default=None):
         user_input = st.text_input("Ask your question here:", key="input_field")
@@ -50,6 +35,7 @@ def ask_chatbot():
             st.session_state.response = st.session_state.agent.ask_question(user_input)
             st.subheader("Response")
             st.write(st.session_state.response[-1])
+            st.write(st.session_state.response)
             if st.button("Show entire step"):
                 for c in st.session_state.response:
                     st.write(c)
