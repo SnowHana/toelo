@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from footy.clt_main import start_app
+from toelo.clt_main import start_app
 
 
 def run_footy_cli_command():

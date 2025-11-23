@@ -1,125 +1,36 @@
-Get a datafile...
+# Toelo (formerly Footy)
 
----
+Football data analysis and ELO rating system.
 
-This is a new repo. My old repo (footy) was abandoned cuz data file was too big, and it often lead to a lot of unexpected errors.
+## Setup
 
----
+1.  **Clone the repository**
+2.  **Install dependencies**:
+    ```bash
+    poetry install
+    ```
+3.  **Environment Configuration**:
+    Copy `.env.example` to `.env` and update with your database credentials.
+    ```bash
+    cp .env.example .env
+    ```
 
-# Data and DB
+## Usage
 
-## Data set
-
-Download and place the data files from
-google drive link
-https://drive.google.com/drive/folders/1x_R1GlTMJKeo9CTACmffRorAjfjSmxy8?usp=drive_link
-
-and place it to
-~/data/
-
-## DB
-
-### Creating a dump / sql file
-
-there is a postgre database file in ~/football.dump (or footall.sql)
-
+### CLI Tool
+Run the command-line interface:
 ```bash
-pg_dump -U your_username -h localhost your_db_name > your_dump_file.sql
-
-OR
-
-pg_dump -U your_username -h localhost -F c -f your_dump_file.dump your_db_name
+python -m toelo.clt_main
 ```
 
-Replace your_db_name to football
-
-### Create a database based on above file
-
-1. Create a database
-
+### Streamlit App
+Run the frontend dashboard:
 ```bash
-createdb -U your_username new_db_name
-
-OR
-
-CREATE DATABASE new_db_name;
+streamlit run src/toelo/frontend/main.py
 ```
 
-2. Restore the dump file
-
+## Testing
+Run unit tests:
 ```bash
-psql -U your_username -d new_db_name -f your_dump_file.sql
-
-OR
-
-pg_restore -U your_username -d new_db_name your_dump_file.dump
-
+python -m unittest discover tests
 ```
-
-If this doesnt work do
-
-```bash
-sudo -u postgres pg_dump -d football -f /tmp/football.sql
-
-AND
-
-sudo mv /tmp/football.sql .
-
-```
-
-And zip it
-
-```bash
-gzip > football.sql.gz
-```
-
-Unzip
-
-```bash
-gunzip -c football.sql.gz | psql -U postgres -d football
-```
-
-Make sure to
-🔒 Don’t Forget:
-
-You may need to allow trust or password login in pg_hba.conf or use --password if needed.
-
-Use the same PostgreSQL version or a compatible one on both machines to avoid restore errors.
-
-### Setting up postgresql
-
-```bash
-# Drop the existing database
-dropdb -U postgres football
-
-# Create a fresh new database
-createdb football
-
-# Import your database.sql into this database
-psql -U postgres football < database.sql
-
-```
-
-```python
-DATABASE_CONFIG = {
-"dbname": "football",
-"user": "postgres",
-"password": "1234",
-"host": "localhost",
-"port": "5432",
-}
-```
-
-You have to create a user and database accordingly...
-
----
-
-# Updates
-
-## Chat Bot
-
-Initally tried to use OpenAI's API to simply send the request.
-No longer works cuz they charge you for everything.
-Using GPT4All locally and
-LangChain
-https://python.langchain.com/docs/tutorials/sql_qa/

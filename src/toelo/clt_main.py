@@ -1,10 +1,10 @@
 import subprocess
 import sys
 from pathlib import Path
-from footy.player_elo.game_validator import validate_games
-from footy.player_elo.reset_players_elo import reset_init_players_elo_db
-from footy.player_elo.init_sql import init_sql_db
-from footy.player_elo.elo_updater import update_elo
+from toelo.player_elo.game_validator import validate_games
+from toelo.player_elo.reset_players_elo import reset_init_players_elo_db
+from toelo.player_elo.init_sql import init_sql_db
+from toelo.player_elo.elo_updater import update_elo
 
 
 def reset_db():

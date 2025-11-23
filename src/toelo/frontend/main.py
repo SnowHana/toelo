@@ -1,15 +1,15 @@
 from os import environ
-from footy.player_elo.init_sql import init_sql_db
-from footy.player_elo.elo_updater import get_progress, update_elo
-from footy.player_elo.reset_players_elo import reset_init_players_elo_db
-from footy.player_elo.database_connection import get_engine
+from toelo.player_elo.init_sql import init_sql_db
+from toelo.player_elo.elo_updater import get_progress, update_elo
+from toelo.player_elo.reset_players_elo import reset_init_players_elo_db
+from toelo.player_elo.database_connection import get_engine
 import numpy as np
 import pandas as pd
 from sqlalchemy import text
 import streamlit as st
 
 import logging
-import footy.player_elo.elo_updater as elo_updater
+import toelo.player_elo.elo_updater as elo_updater
 from streamlit.logger import get_logger
 
 
@@ -69,16 +69,6 @@ def run_analysis(process_game_num: int):
 
 def display_data():
     try:
-        # ======= METHOD 1 : Using st.connection() =========
-        # cloud = False
-        # DB_URL = (
-        #     environ["DB_URI"]
-        #     if cloud
-        #     else "postgresql+psycopg2://postgres:1234@localhost:5432/football"
-        # )
-        # conn = st.connection("football_db", type="sql", url=DB_URL)
-        # df = conn.query("SELECT * FROM players_elo;")
-
         # ========== METHOD 2: pd.reqd_sql.. ==========
         # Get Engine
         engine = get_engine()

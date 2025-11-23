@@ -7,19 +7,24 @@ from sqlalchemy import create_engine
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 DATABASE_CONFIG = {
-    "dbname": "football",
-    "user": "postgres",
-    "password": "1234",
-    "host": "localhost",
-    "port": "5432",
+    "dbname": os.getenv("DB_NAME", "football"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "1234"),
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": os.getenv("DB_PORT", "5432"),
 }
 
 
 def get_connection_string(config: Dict[str, str]) -> str:
     """Return a SQLAlchemy-compatible connection string."""
     return (
-        f"postgresql+psycopg2://{config['user']}:{config['password']}"
+        f"postgresql+psycopg://{config['user']}:{config['password']}"
         f"@{config['host']}:{config['port']}/{config['dbname']}"
     )
 
